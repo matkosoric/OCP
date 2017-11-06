@@ -1,4 +1,4 @@
-package edu.matkosoric.class_.design.john;
+package edu.matkosoric.class_.design.implementing;
 
 /*
  * Code examples for Oracle Certified Professional (OCP) Exam
@@ -6,8 +6,8 @@ package edu.matkosoric.class_.design.john;
  * Created by © Matko Soric.
  */
 
-public interface Humanity extends Mortality {
+public interface Mortality {
 
-
+    public abstract void death();
 
 }
