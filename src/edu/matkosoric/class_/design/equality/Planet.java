@@ -1,4 +1,4 @@
-package edu.matkosoric.class_.design;
+package edu.matkosoric.class_.design.equality;
 
 /*
  * Code examples for Oracle Certified Professional (OCP) Exam
