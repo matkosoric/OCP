@@ -1,4 +1,4 @@
-package edu.matkosoric.generics.apple;
+package edu.matkosoric.collections.apple;
 
 /*
  * Code examples for Oracle Certified Professional (OCP) Exam
