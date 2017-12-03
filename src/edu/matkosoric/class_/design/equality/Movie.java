@@ -34,11 +34,19 @@ public class Movie {
         alien.id = 1;
         alien.genreCode = 500;
 
+        Movie interstellar = new Movie();
+        interstellar.id = 1;
+        interstellar.genreCode = 600;
+
         Movie alteredStates = new Movie();
         alteredStates.id = 6;
         alteredStates.genreCode = 500;
 
+        System.out.println(alien.equals(interstellar));
+        System.out.println(alien == interstellar);
 
+        System.out.println(alien.equals(alteredStates));
+        System.out.println(alien == alteredStates);
 
     }
 
