@@ -34,7 +34,6 @@ public class EuropeanCities {
         System.out.println(citiesList.remove("Madrid"));
         System.out.println(citiesList);
 
-
         // isEmpty() method returns a boolean
         System.out.println(citiesList.isEmpty());
 
