@@ -28,8 +28,15 @@ public class CustomClasses {
         list1.add(new Animals());
         list1.add(new Humans());
 
+        List<Humans> list9 = new ArrayList<>();
+//        list9.add(new Object());    // does not compile
+//        list9.add(new Life());      // does not compile
+//        list9.add(new Animals());   // does not compile
+        list9.add(new Humans());
 
-        // nothing can be added to the list with lower bound
+
+        // nothing can be added to the list with lower bound.
+        // they are used as a method parameter.
         List<? extends Life> list2 = new ArrayList<>();
 //        list2.add(new Object());        // does not compile
 //        list2.add(new Life());          // does not compile
@@ -49,6 +56,7 @@ public class CustomClasses {
 //        list8.add(new Life());          // does not compile
 //        list8.add(new Animals());       // does not compile
 //        list8.add(new Humans());        // does not compile
+
 
         // a list with the upper bound
         List <? super Life> list4 = new ArrayList<>();
