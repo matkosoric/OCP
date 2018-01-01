@@ -7,6 +7,7 @@ package edu.matkosoric.generics.upper.bound;
  */
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Numbers {
 
@@ -15,7 +16,7 @@ public class Numbers {
 
     public static void main(String[] args) {
 
-        ArrayList <? super Number> numbers = new ArrayList<>();
+        List<? super Number> numbers = new ArrayList<>();
 
         numbers.add(1);
         numbers.add(new Integer(1));
@@ -27,6 +28,9 @@ public class Numbers {
         numbers.add(new Float(4.0));
         numbers.add(Short.parseShort("5"));
         numbers.add(Byte.parseByte("6"));
+//        numbers.add("numbers");     // does not compile
+//        numbers.add(false);         // does not compile
+//        numbers.add('n');           // does not compile
 
         System.out.println(numbers);
 

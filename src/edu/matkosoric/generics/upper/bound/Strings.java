@@ -7,6 +7,7 @@ package edu.matkosoric.generics.upper.bound;
  */
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Strings {
 
@@ -15,7 +16,7 @@ public class Strings {
 
     public static void main(String[] args) {
 
-        ArrayList <? super CharSequence> listOfCharacters = new ArrayList<>();
+        List<? super CharSequence> listOfCharacters = new ArrayList<>();
 
         listOfCharacters.add(new String("matko"));
         listOfCharacters.add(new StringBuilder("soric"));
