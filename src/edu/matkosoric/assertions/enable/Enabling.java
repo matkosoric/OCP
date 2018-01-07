@@ -2,7 +2,7 @@ package edu.matkosoric.assertions.enable;
 
 /*
  * Code examples for Oracle Certified Professional (OCP) Exam
- * Java 8 SE, 2017.
+ * Java 8 SE, 2018.
  * Created by © Matko Soric.
  */
 
@@ -17,7 +17,7 @@ public class Enabling {
 
         System.out.println("This line will be executed.");
         assert 3 < 1;
-        System.out.println("This line of code will not be reached.");
+        System.out.println("This line of code will not be reached, but JVM has to be passed the -ea parameter");
 
     }
 }

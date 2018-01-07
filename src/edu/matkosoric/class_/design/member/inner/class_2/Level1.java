@@ -2,7 +2,7 @@ package edu.matkosoric.class_.design.member.inner.class_2;
 
 /*
  * Code examples for Oracle Certified Professional (OCP) Exam
- * Java 8 SE, 2017.
+ * Java 8 SE, 2018.
  * Created by © Matko Soric.
  */
 
