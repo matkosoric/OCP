@@ -24,5 +24,4 @@ public class TrueDetective {
 //        teamMap.put('R', 3l);                           // does not compile
 
     }
-
 }
