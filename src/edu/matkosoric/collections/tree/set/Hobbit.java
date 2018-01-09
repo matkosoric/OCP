@@ -26,6 +26,22 @@ public class Hobbit {
         hobbitMovies.forEach(title -> System.out.println(title));
         System.out.println();
 
+        // methods from NavigableSet interface
+        System.out.println("LOWER: " + hobbitMovies.lower("The Desolation of Smaug"));  // returns previous element
+        System.out.println("LOWER: " + hobbitMovies.lower("An Unexpected Journey"));    // there is no item before this one
+
+        System.out.println("HIGHER: " + hobbitMovies.higher("An Unexpected Journey"));      // returns the next element
+        System.out.println("HIGHER: " + hobbitMovies.higher("The Desolation ..."));         // 'completes' the string
+        System.out.println("HIGHER: " + hobbitMovies.higher("The Desolation of Smaug"));    // returns null, this is the last item
+
+        System.out.println("FLOOR: " + hobbitMovies.floor("The Battle of Five Armies"));
+        System.out.println("FLOOR: " + hobbitMovies.floor("The Desolation ..."));           // returns previous item
+
+        System.out.println("CEILING: " + hobbitMovies.ceiling("An Unexpected Journey"));
+        System.out.println("CEILING: " + hobbitMovies.ceiling("The Battle of 888"));        // 'completes' the string
+
+        System.out.println();
+
         // LOTR movies are 'automatically' sorted by release year,
         // not by title, nor by insertion order,
         // due to the compareTo implementation.
