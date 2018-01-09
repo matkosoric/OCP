@@ -6,6 +6,7 @@ package edu.matkosoric.lambdas.supplier;
  * Created by © Matko Soric.
  */
 
+import java.time.LocalDate;
 import java.util.function.Supplier;
 
 public class SupplyExample {
@@ -22,6 +23,12 @@ public class SupplyExample {
 
         Supplier<Boolean> popularShow = () -> true;
         System.out.println(popularShow.get());
+
+        Supplier<StringBuilder> sb = StringBuilder::new;        // empty string
+        System.out.println(sb.get());
+
+        Supplier<LocalDate> date = LocalDate::now;
+        System.out.println(date.get());
 
     }
 
