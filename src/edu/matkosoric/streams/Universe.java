@@ -1,4 +1,4 @@
-package edu.matkosoric.functional.programming.universe;
+package edu.matkosoric.streams;
 
 /*
  * Code examples for Oracle Certified Professional (OCP) Exam
