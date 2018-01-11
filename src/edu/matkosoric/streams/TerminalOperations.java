@@ -32,13 +32,13 @@ public class TerminalOperations {
         Stream<String> MGStream1 = melGibsonMovies.stream();
         System.out.println(MGStream1.count());
 
-        // min() takes Comparator and searches for matching value
+        // min() takes Comparator and searches for a matching value
         Stream<String> MGStream2 = melGibsonMovies.stream();
         System.out.println(MGStream2.min((s1, s2) -> {
             System.out.println(s1.charAt(0) + " " + s2.charAt(0));
             return s1.charAt(0) - s2.charAt(0);}));
 
-        // max() also take Comparator and searches for matching value
+        // max() also takes Comparator and searches for a matching value
         Stream<String> MGStream3 = melGibsonMovies.stream();
         System.out.println(MGStream3.max((s1,s2) -> {
             System.out.println(s1.length() + " : " + s2.length());
