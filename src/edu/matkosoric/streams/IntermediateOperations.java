@@ -75,13 +75,6 @@ public class IntermediateOperations {
         System.out.println("*************** PEEK ********");
         Stream<String> RSStream9 = ridleyScottMovies.stream();
         RSStream9.peek(System.out::println).max((s1, s2) -> s1.length() - s2.length());
-
-
-
-
-
-
     }
-
 
 }
