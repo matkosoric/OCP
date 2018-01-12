@@ -1,4 +1,4 @@
-package edu.matkosoric.localization;
+package edu.matkosoric.localization.liver;
 
 /*
  * Code examples for Oracle Certified Professional (OCP) Exam
@@ -18,8 +18,9 @@ public class Liver {
         Locale english = new Locale ("en", "US");
         Locale french = new Locale ("fr", "FR");
 
-        ResourceBundle englishBundle = ResourceBundle.getBundle("edu//matkosoric//localization//liver", english);
-        ResourceBundle frenchBundle = ResourceBundle.getBundle("edu//matkosoric//localization//liver", french);
+        // path can be specified as a file path or a full package name
+        ResourceBundle englishBundle = ResourceBundle.getBundle("edu//matkosoric//localization//liver//liver", english);
+        ResourceBundle frenchBundle = ResourceBundle.getBundle("edu//matkosoric//localization//liver//liver", french);
 
         System.out.println(englishBundle.getString("beans"));
         System.out.println(frenchBundle.getString("beans") + "\n");
