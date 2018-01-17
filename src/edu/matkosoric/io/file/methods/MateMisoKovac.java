@@ -17,6 +17,8 @@ public class MateMisoKovac {
 
     public static void main(String[] args) {
 
+
+        // windows path, does not work on Linux
         File nemamRazlogaLyrics = new File ("src\\edu\\matkosoric\\io\\file\\methods\\Ja_nemam_vise_razloga_da_zivim.txt");
         File MMKfolder = new File ("src\\edu\\matkosoric\\io\\file\\methods\\MMK-lyrics");
 
