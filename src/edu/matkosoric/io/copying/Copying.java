@@ -31,7 +31,7 @@ public class Copying {
 
         // note: linux path
         File source = new File ("src/edu/matkosoric/io/sample/jelena/rozga/Bizuterija.txt");
-        File destination = new File ("src/edu/matkosoric/io/copying/kopija.txt");
+        File destination = new File ("src/edu/matkosoric/io/copying/kopija_Bizuterije.txt");
 
         copy (source.getAbsoluteFile(),destination);
         System.out.println(destination.getCanonicalPath());
