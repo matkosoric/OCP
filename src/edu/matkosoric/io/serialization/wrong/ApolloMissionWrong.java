@@ -1,4 +1,8 @@
-package edu.matkosoric.io.serialization;
+package edu.matkosoric.io.serialization.wrong;
+
+import java.io.Serializable;
+import java.time.LocalDate;
+import java.util.ArrayList;
 
 /*
  * Code examples for Oracle Certified Professional (OCP) Exam
@@ -6,21 +10,17 @@ package edu.matkosoric.io.serialization;
  * Created by © Matko Soric.
  */
 
-import java.io.Serializable;
-import java.time.LocalDate;
-import java.util.ArrayList;
-
-public class ApolloMission implements Serializable{
+public class ApolloMissionWrong implements Serializable {
 
     private static final long serialVersionUID = 32423;
 
-    private String name;
+    private transient String name;
 
-    private LocalDate launchDate;
+    private static LocalDate launchDate;
 
     private ArrayList<String> crew;
 
-    public ApolloMission(String name, LocalDate launchDate, ArrayList<String> crew) {
+    public ApolloMissionWrong(String name, LocalDate launchDate, ArrayList<String> crew) {
         this.name = name;
         this.launchDate = launchDate;
         this.crew = crew;
@@ -34,3 +34,4 @@ public class ApolloMission implements Serializable{
         return "Apollo Mission [name=" + name + ", launch date=" + launchDate + ", crew=" + crew + "]";
     }
 }
+
