@@ -10,7 +10,7 @@ import java.io.*;
 
 public class Copying2 {
 
-    // copying with buffer
+    // copying with streams and buffer
 
     public static void copy (File source, File destination) throws IOException {
 
