@@ -29,8 +29,4 @@ public class ApolloMission implements Serializable{
     public String getName() { return name; }
     public LocalDate getLaunchDate() { return launchDate; }
     public ArrayList<String> getCrew() { return crew; }
-
-    public String toString () {
-        return "Apollo Mission [name=" + name + ", launch date=" + launchDate + ", crew=" + crew + "]";
-    }
 }
