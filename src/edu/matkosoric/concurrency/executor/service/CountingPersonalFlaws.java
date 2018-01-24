@@ -28,7 +28,6 @@ public class CountingPersonalFlaws {
 
             System.out.println("the end");
 
-
         } finally {
             if (executorService != null)
                 executorService.shutdown();
