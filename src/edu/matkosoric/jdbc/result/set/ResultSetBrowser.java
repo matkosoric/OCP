@@ -8,7 +8,6 @@ package edu.matkosoric.jdbc.result.set;
 
 import org.apache.derby.jdbc.EmbeddedDriver;
 
-import javax.xml.transform.Result;
 import java.sql.*;
 import java.util.HashMap;
 import java.util.Map;
