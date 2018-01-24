@@ -27,10 +27,13 @@ public class CallingStringLength {
 
             System.out.println(result.get());
 
+            result = executorService.submit(() -> "George Clooney".length());
+
+            System.out.println(result.get());
+
         } finally {
             if (executorService != null) executorService.shutdown();
         }
-
 
     }
 
