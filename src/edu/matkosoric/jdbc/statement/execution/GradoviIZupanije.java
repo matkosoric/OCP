@@ -25,7 +25,6 @@ public class GradoviIZupanije {
         // SHEMA
         String createSQL = "CREATE TABLE hrvatska ("
                 + "id INTEGER NOT NULL ,"
-                // GENERATED ALWAYS AS IDENTITY (start with 1, increment by 1)
                 + "zupanija_ime VARCHAR(30) NOT NULL, "
                 + "povrsina_km INTEGER,"
                 + "broj_gradova INTEGER,"
