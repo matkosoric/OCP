@@ -38,9 +38,5 @@ public class SimpleFuture {
         } finally {
             if (executorService != null) executorService.shutdown();
         }
-
-
-
-
     }
 }
