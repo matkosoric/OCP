@@ -19,7 +19,7 @@ public class Unpredictable {
         System.out.println(firstNumber);
 
         synchronized (firstNumber) {
-            Integer secondNumber = Arrays.asList(5,3,1,2,4,9,6,8,7)
+            Integer secondNumber = Arrays.asList(5,3,1,2,4,9,6,8,7,11,12,13,14,15,16,17,18,19,20)
                                         .parallelStream()
                                         .sorted()
                                         .findAny()
