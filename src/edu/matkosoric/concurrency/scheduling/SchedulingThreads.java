@@ -21,7 +21,6 @@ public class SchedulingThreads {
 
         try {
 
-
             Runnable thread1 = () -> System.out.println("Kenny Rogers");
             Callable<String> thread2 = () -> {
                 System.out.println("Just Dropped In");
