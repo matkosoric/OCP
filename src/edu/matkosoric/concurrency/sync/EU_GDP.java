@@ -40,12 +40,5 @@ public class EU_GDP {
         } finally {
             if (executorService != null) executorService.shutdown();
         }
-
-
-
-
-
     }
-
-
 }
