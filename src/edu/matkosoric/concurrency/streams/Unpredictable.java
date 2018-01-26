@@ -1,4 +1,4 @@
-package edu.matkosoric.concurrency.sync;
+package edu.matkosoric.concurrency.streams;
 
 /*
  * Code examples for Oracle Certified Professional (OCP) Exam
