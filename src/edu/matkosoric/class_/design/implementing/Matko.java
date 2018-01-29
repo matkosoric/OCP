@@ -10,10 +10,9 @@ package edu.matkosoric.class_.design.implementing;
 // this class will not compile, since class Matko has to implement
 // both inherited methods: emotions() and death().
 
-//public class Matko extends Humanity {
+//public class Matko extends Human {
 //
 //    public void emotions() {
 //        System.out.println("Matko, as a human, has emotions. Rarely, although.");
 //    }
-//
 //}
