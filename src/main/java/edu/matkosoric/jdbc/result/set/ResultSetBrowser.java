@@ -2,7 +2,7 @@ package edu.matkosoric.jdbc.result.set;
 
 /*
  * Code examples for Oracle Certified Professional (OCP) Exam
- * Java 8 SE, 2018.
+ * Java 8 SE, 2021.
  * Created by © Matko Soric.
  */
 
