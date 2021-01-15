@@ -10,6 +10,7 @@ public class Book {
 
     // without overridden hashCode() and equals(), two compared
     // Book instances would be considered to be different
+    //
 
     private int ISBN;
     private String title;
