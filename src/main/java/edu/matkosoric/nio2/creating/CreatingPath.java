@@ -17,6 +17,8 @@ public class CreatingPath {
 
     public static void main(String[] args) throws URISyntaxException {
 
+        String currentDirectory = System.getProperty("user.dir");
+
         Path path1 = Paths.get("/home/matko/selfie.jpg");
 
         Path path2 = Paths.get("/", "home", "selfie.jpg");

@@ -14,6 +14,8 @@ public class Buffering {
 
     public static void main(String[] args) {
 
+        String currentDirectory = System.getProperty("user.dir");
+
         // linux path, does not work on windows
         try (BufferedReader bufferedReader = new BufferedReader(
                 new FileReader("/home/matko/IdeaProjects/OCP/src/edu/matkosoric/io/sample/jelena/rozga/GospeMoja.txt"))) {

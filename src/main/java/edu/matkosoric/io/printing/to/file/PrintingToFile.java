@@ -14,6 +14,8 @@ public class PrintingToFile {
 
     public static void main(String[] args) throws IOException{
 
+        String currentDirectory = System.getProperty("user.dir");
+
         File destination = new File("/home/matko/IdeaProjects/OCP/src/edu/matkosoric/io/printing/to/file/Kurtz.txt");
 
         try (PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(destination)))) {

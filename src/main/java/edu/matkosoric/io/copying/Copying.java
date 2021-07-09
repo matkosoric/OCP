@@ -29,9 +29,10 @@ public class Copying {
 
     public static void main(String[] args) throws IOException {
 
-        // note: linux path
-        File source = new File ("src/edu/matkosoric/io/sample/jelena/rozga/Bizuterija.txt");
-        File destination = new File ("src/edu/matkosoric/io/copying/kopija_Bizuterije.txt");
+        String currentDirectory = System.getProperty("user.dir");
+
+        File source = new File (currentDirectory + "/src/main/java/edu/matkosoric/io/sample/jelena/rozga/Bizuterija.txt");
+        File destination = new File (currentDirectory + "/src/main/java/edu/matkosoric/io/copying/kopija_Bizuterije.txt");
 
         copy (source.getAbsoluteFile(),destination);
         System.out.println(destination.getCanonicalPath());

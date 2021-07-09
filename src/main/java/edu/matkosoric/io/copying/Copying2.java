@@ -31,8 +31,10 @@ public class Copying2 {
 
     public static void main(String[] args) throws IOException {
 
-        File source = new File("/home/matko/IdeaProjects/OCP/src/edu/matkosoric/io/sample/jelena/rozga/RoditCuTiCerISina.txt");
-        File destination = new File ("/home/matko/IdeaProjects/OCP/src/edu/matkosoric/io/copying/rodit_cu.txt");
+        String currentDirectory = System.getProperty("user.dir");
+
+        File source = new File(currentDirectory + "/src/main/java/edu/matkosoric/io/sample/jelena/rozga/RoditCuTiCerISina.txt");
+        File destination = new File (currentDirectory + "/src/main/java/edu/matkosoric/io/copying/rodit_cu.txt");
 
         copy(source,destination);
 

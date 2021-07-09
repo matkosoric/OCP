@@ -14,6 +14,8 @@ public class ParentAndChildPath {
 
     public static void main(String[] args) {
 
+        String currentDirectory = System.getProperty("user.dir");
+
         // note: linux path
         File parent = new File("/home/matko/IdeaProjects/OCP/src/edu/matkosoric");
         File child = new File(parent, "io/sample/jelena/rozga/RoditCuTiCerISina.txt");

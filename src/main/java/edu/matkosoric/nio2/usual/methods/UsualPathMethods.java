@@ -18,6 +18,7 @@ public class UsualPathMethods {
 
     public static void main(String[] args) throws IOException {
 
+        String currentDirectory = System.getProperty("user.dir");
         Path belanPath = Paths.get("/home/matko/IdeaProjects/OCP/src/edu/matkosoric/nio2/sample/neno/belan/kavana.txt");
         Path belanPathDeeper = Paths.get("/home/matko/IdeaProjects/OCP/src/edu/matkosoric/nio2/sample/neno/belan/more/lyrics/sunny_day.txt");
         Path belanPathRelative = Paths.get("src/edu/matkosoric/nio2/sample/neno/belan/kavana.txt");

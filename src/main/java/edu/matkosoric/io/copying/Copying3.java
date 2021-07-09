@@ -45,14 +45,10 @@ public class Copying3 {
 
         String currentDirectory = System.getProperty("user.dir");
 
-        System.out.println(currentDirectory);
-
-        File source = new File (currentDirectory + "/src/edu/matkosoric/io/sample/jelena/rozga/GospeMoja.txt");
-
-        File destination = new File (currentDirectory + "/src/edu/matkosoric/io/copying/GM.txt");
+        File source = new File (currentDirectory + "/src/main/java/edu/matkosoric/io/sample/jelena/rozga/GospeMoja.txt");
+        File destination = new File (currentDirectory + "/src/main/java/edu/matkosoric/io/copying/GM.txt");
 
         List<String> lyrics = readFile(source);
-
         writeFile(lyrics, destination);
 
     }

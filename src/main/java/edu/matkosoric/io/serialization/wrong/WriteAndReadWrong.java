@@ -73,6 +73,7 @@ public class WriteAndReadWrong {
         missionsToWrite.add(apollo17);
 
         // writing
+        String currentDirectory = System.getProperty("user.dir");
         File listOfMissions = new File("/home/matko/IdeaProjects/OCP/src/edu/matkosoric/io/serialization/wrong/file_missions.data");
         write(missionsToWrite, listOfMissions);
 
