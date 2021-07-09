@@ -6,8 +6,6 @@ package edu.matkosoric.jdbc.result.set;
  * Created by © Matko Soric.
  */
 
-import org.apache.derby.jdbc.EmbeddedDriver;
-
 import java.sql.*;
 import java.util.HashMap;
 import java.util.Map;
@@ -16,7 +14,7 @@ public class ResultSetBrowser {
 
     // traversing the ResultSet object with cursor
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException{
 
         Connection conn = null;
         PreparedStatement preparedStatement;
@@ -28,8 +26,7 @@ public class ResultSetBrowser {
                 + "broj_nocenja INTEGER)";
 
         try {
-            Driver derbyEmbeddedDriver = new EmbeddedDriver();
-            DriverManager.registerDriver(derbyEmbeddedDriver);
+            DriverManager.registerDriver(new org.apache.derby.jdbc.EmbeddedDriver());
             conn = DriverManager.getConnection("jdbc:derby:derbyMatko4;create=true");
             conn.setAutoCommit(false);
             statement = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);

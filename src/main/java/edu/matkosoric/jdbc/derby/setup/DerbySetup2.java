@@ -14,7 +14,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import org.apache.derby.jdbc.EmbeddedDriver;
 
 public class DerbySetup2 {
 
@@ -34,8 +33,7 @@ public class DerbySetup2 {
                 + "CONSTRAINT primary_key PRIMARY KEY (id))";
 
         try {
-            Driver derbyEmbeddedDriver = new EmbeddedDriver();
-            DriverManager.registerDriver(derbyEmbeddedDriver);
+            DriverManager.registerDriver(new org.apache.derby.jdbc.EmbeddedDriver());
             conn = DriverManager.getConnection ("jdbc:derby:derbyMatko2;create=true");
             conn.setAutoCommit(false);
             stmt = conn.createStatement();

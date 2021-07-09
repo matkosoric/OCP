@@ -6,7 +6,6 @@ package edu.matkosoric.jdbc.statement.execution;
  * Created by © Matko Soric.
  */
 
-import org.apache.derby.jdbc.EmbeddedDriver;
 
 import java.sql.*;
 
@@ -31,8 +30,9 @@ public class GradoviIZupanije {
                 + "CONSTRAINT primary_key PRIMARY KEY (id))";
 
         try {
-            Driver derbyEmbeddedDriver = new EmbeddedDriver();
-            DriverManager.registerDriver(derbyEmbeddedDriver);
+
+            DriverManager.registerDriver(new org.apache.derby.jdbc.EmbeddedDriver());
+
             conn = DriverManager.getConnection("jdbc:derby:derbyMatko3;create=true");
             conn.setAutoCommit(false);
             statement = conn.createStatement();

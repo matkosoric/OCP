@@ -22,7 +22,7 @@ public class Buffering {
             System.out.println(bufferedReader.readLine());
 
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
 
     }
