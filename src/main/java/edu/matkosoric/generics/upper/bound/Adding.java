@@ -2,11 +2,9 @@ package edu.matkosoric.generics.upper.bound;
 
 /*
  * Code examples for Oracle Certified Professional (OCP) Exam
- * Java 8 SE, 2021.
+ * Java 11 SE, 2021.
  * Created by © Matko Soric.
  */
-
-import com.sun.org.apache.xpath.internal.SourceTree;
 
 import java.util.Arrays;
 import java.util.List;

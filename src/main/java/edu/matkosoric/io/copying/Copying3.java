@@ -2,7 +2,7 @@ package edu.matkosoric.io.copying;
 
 /*
  * Code examples for Oracle Certified Professional (OCP) Exam
- * Java 8 SE, 2021.
+ * Java 11 SE, 2021.
  * Created by © Matko Soric.
  */
 
@@ -43,9 +43,13 @@ public class Copying3 {
 
     public static void main(String[] args) throws IOException {
 
-        File source = new File ("/home/matko/IdeaProjects/OCP/src/edu/matkosoric/io/sample/jelena/rozga/GospeMoja.txt");
+        String currentDirectory = System.getProperty("user.dir");
 
-        File destination = new File ("/home/matko/IdeaProjects/OCP/src/edu/matkosoric/io/copying/GM.txt");
+        System.out.println(currentDirectory);
+
+        File source = new File (currentDirectory + "/src/edu/matkosoric/io/sample/jelena/rozga/GospeMoja.txt");
+
+        File destination = new File (currentDirectory + "/src/edu/matkosoric/io/copying/GM.txt");
 
         List<String> lyrics = readFile(source);
 

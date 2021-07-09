@@ -2,7 +2,7 @@ package edu.matkosoric.nio2.traversing.directory;
 
 /*
  * Code examples for Oracle Certified Associate (OCA) Exam
- * Java 8 SE, 2017.
+ * Java 11 SE, 2017.
  * Created by © Matko Soric.
  */
 
