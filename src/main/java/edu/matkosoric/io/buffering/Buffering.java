@@ -18,7 +18,7 @@ public class Buffering {
 
         // linux path, does not work on windows
         try (BufferedReader bufferedReader = new BufferedReader(
-                new FileReader("/home/matko/IdeaProjects/OCP/src/edu/matkosoric/io/sample/jelena/rozga/GospeMoja.txt"))) {
+                new FileReader(currentDirectory + "/src/main/java/edu/matkosoric/io/sample/jelena/rozga/GospeMoja.txt"))) {
             System.out.println(bufferedReader.readLine());
             System.out.println(bufferedReader.readLine());
             System.out.println(bufferedReader.readLine());

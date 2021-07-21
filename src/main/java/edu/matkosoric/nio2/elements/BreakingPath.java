@@ -16,7 +16,7 @@ public class BreakingPath {
     public static void main(String[] args) {
 
         String currentDirectory = System.getProperty("user.dir");
-        Path belanPath = Paths.get("/home/matko/IdeaProjects/OCP/src/edu/matkosoric/nio2/sample/neno/belan/divojka_sa_juga.txt");
+        Path belanPath = Paths.get(currentDirectory + "/src/main/java/edu/matkosoric/nio2/sample/neno/belan/divojka_sa_juga.txt");
 
         System.out.println("Path is: " + belanPath);
 

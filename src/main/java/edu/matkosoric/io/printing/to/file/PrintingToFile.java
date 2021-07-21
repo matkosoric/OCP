@@ -16,7 +16,7 @@ public class PrintingToFile {
 
         String currentDirectory = System.getProperty("user.dir");
 
-        File destination = new File("/home/matko/IdeaProjects/OCP/src/edu/matkosoric/io/printing/to/file/Kurtz.txt");
+        File destination = new File(currentDirectory + "/src/main/java/edu/matkosoric/io/printing/to/file/Kurtz.txt");
 
         try (PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(destination)))) {
             pw.write("I watched a snail crawl along the edge of a straight razor. ");

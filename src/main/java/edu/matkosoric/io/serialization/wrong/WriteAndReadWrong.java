@@ -74,7 +74,7 @@ public class WriteAndReadWrong {
 
         // writing
         String currentDirectory = System.getProperty("user.dir");
-        File listOfMissions = new File("/home/matko/IdeaProjects/OCP/src/edu/matkosoric/io/serialization/wrong/file_missions.data");
+        File listOfMissions = new File(currentDirectory + "/src/main/java/edu/matkosoric/io/serialization/wrong/file_missions.data");
         write(missionsToWrite, listOfMissions);
 
         // reading

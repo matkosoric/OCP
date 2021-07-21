@@ -19,10 +19,11 @@ public class UsualPathMethods {
     public static void main(String[] args) throws IOException {
 
         String currentDirectory = System.getProperty("user.dir");
-        Path belanPath = Paths.get("/home/matko/IdeaProjects/OCP/src/edu/matkosoric/nio2/sample/neno/belan/kavana.txt");
-        Path belanPathDeeper = Paths.get("/home/matko/IdeaProjects/OCP/src/edu/matkosoric/nio2/sample/neno/belan/more/lyrics/sunny_day.txt");
-        Path belanPathRelative = Paths.get("src/edu/matkosoric/nio2/sample/neno/belan/kavana.txt");
-        Path belanPathRelative2 = Paths.get("src/edu/matkosoric/nio2/sample/neno/belan/more/lyrics/sunny_day.txt");
+        System.out.println(currentDirectory);
+        Path belanPath = Paths.get(currentDirectory + "/src/main/java/edu/matkosoric/nio2/sample/neno/belan/kavana.txt");
+        Path belanPathDeeper = Paths.get(currentDirectory + "/src/main/java/edu/matkosoric/nio2/sample/neno/belan/more/lyrics/sunny_day.txt");
+        Path belanPathRelative = Paths.get("src/main/java/edu/matkosoric/nio2/sample/neno/belan/kavana.txt");
+        Path belanPathRelative2 = Paths.get("src/main/java/edu/matkosoric/nio2/sample/neno/belan/more/lyrics/sunny_day.txt");
         Path belanPathPeriod= Paths.get("../../../../../../../../kavana.txt");
 
         System.out.println("Filename: " + belanPath.getFileName());
@@ -66,7 +67,7 @@ public class UsualPathMethods {
         System.out.println(belanPathDeeper.resolve(belanPath));     // simply returns parameter path
         System.out.println(belanPathRelative.resolve(belanPathRelative2));      // produces meaningless concatenation
         System.out.println(belanPathRelative2.resolve(belanPathRelative));      // produces meaningless concatenation
-        Path lyrics = Paths.get("/home/matko/IdeaProjects/OCP/src/edu/matkosoric/nio2/sample/neno/belan");
+        Path lyrics = Paths.get(currentDirectory + "/src/main/java/edu/matkosoric/nio2/sample/neno/belan");
         System.out.println(lyrics.resolve(Paths.get("more/lyrics")));
 
         // normalize()
@@ -89,20 +90,20 @@ public class UsualPathMethods {
 
         // createDirectory() - can create new directory only in a preexisting directory
         // if directory already exists, it will throw FileAlreadyExistsException at runtime
-        Path lyrics2 = Paths.get ("/home/matko/IdeaProjects/OCP/src/edu/matkosoric/nio2/sample/neno/belan/lyrics2");
-        Path copying = Paths.get("/home/matko/IdeaProjects/OCP/src/edu/matkosoric/nio2/sample/neno/belan/lyrics2/kavana_kopija");
+        Path lyrics2 = Paths.get (currentDirectory + "/src/main/java/edu/matkosoric/nio2/sample/neno/belan/lyrics2");
+        Path copying = Paths.get(currentDirectory + "/src/main/java/edu/matkosoric/nio2/sample/neno/belan/lyrics2/kavana_kopija");
         Files.deleteIfExists(copying);
         Files.deleteIfExists(lyrics2);
         Files.createDirectory(lyrics2);
 
         // createDirectories() - creates a directory with its non-existent parent directories
-        Files.createDirectories(Paths.get("/home/matko/IdeaProjects/OCP/src/edu/matkosoric/nio2/sample/neno/belan/second/lyrics/directory"));
+        Files.createDirectories(Paths.get(currentDirectory + "/src/main/java/edu/matkosoric/nio2/sample/neno/belan/second/lyrics/directory"));
 
         // copy a file with its content
         Files.copy(belanPath, copying);
 
         // move a file
-        Path moving = Paths.get("/home/matko/IdeaProjects/OCP/src/edu/matkosoric/nio2/sample/neno/belan/more/lyrics/moved.txt");
+        Path moving = Paths.get(currentDirectory + "/src/main/java/edu/matkosoric/nio2/sample/neno/belan/more/lyrics/moved.txt");
         Files.deleteIfExists(moving);
         Files.move(belanPath, moving);
         // copy back the file
