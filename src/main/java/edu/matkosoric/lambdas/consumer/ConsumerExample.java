@@ -6,7 +6,6 @@ package edu.matkosoric.lambdas.consumer;
  * Created by © Matko Soric.
  */
 
-import java.util.function.BooleanSupplier;
 import java.util.function.Consumer;
 
 public class ConsumerExample {

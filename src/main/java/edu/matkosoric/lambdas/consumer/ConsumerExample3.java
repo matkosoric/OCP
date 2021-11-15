@@ -19,7 +19,7 @@ public class ConsumerExample3 {
 
     public static void main(String[] args) {
 
-        Consumer<Boolean> consumer = a -> System.out.println( a);
+        Consumer<Boolean> consumer = a -> System.out.println(a);
 
         // printing from a stream
         Stream<Boolean> stream = Stream.of(true, false, false, true, false, true, true, true);
