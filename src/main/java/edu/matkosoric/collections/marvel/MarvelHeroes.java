@@ -13,7 +13,7 @@ public class MarvelHeroes {
 
         List<String> linkedList1 = new LinkedList<>();
         Set<String> hashSet1 = new HashSet<>();
-        String[] heroes = {"Hulk", "Batman", "Spiderman", "Hulk", "Batman"};
+        String[] heroes = {"Hulk", "Ironman", "Spiderman", "Hulk", "Ironman"};
 
         for (String hero : heroes) {
             linkedList1.add(hero);
