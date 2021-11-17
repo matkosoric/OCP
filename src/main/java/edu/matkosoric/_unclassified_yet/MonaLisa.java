@@ -10,6 +10,8 @@ public class MonaLisa {
 
     public static void main(String[] args) {
 
+        // TODO: nothing works
+
 //        Function<String, String> func = (@NonNull x) -> x.toUpperCase();
 //        var v = "Hello" + (@Interned) "World";
 //        Function<String, String> func = (@NonNull var x) -> x.toUpperCase();
