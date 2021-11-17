@@ -1,4 +1,4 @@
-package edu.matkosoric.output;
+package edu.matkosoric.execution.output;
 
 public class Dividing {
 
