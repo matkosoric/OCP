@@ -1,6 +1,6 @@
-package edu.matkosoric.class_.design.thermometer;
+package edu.matkosoric.class_.design.barometer;
 
-public class ThermometerSensor extends Thermometer {
+public class BarometerSensor extends Barometer {
 
     public float getVal() {
         return 0f;
@@ -26,7 +26,7 @@ public class ThermometerSensor extends Thermometer {
 //    }
 
     public static void main(String[] args) {
-        ThermometerSensor test = new ThermometerSensor();
+        BarometerSensor test = new BarometerSensor();
         float f = test.getVal();
         System.out.println(f + test.getVal());
     }
