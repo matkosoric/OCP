@@ -33,17 +33,17 @@ public class BiPredicateExample {
         // this will print only movies that are released after the 1950
         for (Map.Entry<Integer, String> entry : henryFondaMovies.entrySet())
             if (yearFilter.test(entry.getKey(), entry.getValue()))
-                System.out.println(entry.getValue());
+                System.out.println("after 1950: " + entry.getValue());
 
         // this will print only movies that contain number in the title
         for (Map.Entry<Integer, String> entry : henryFondaMovies.entrySet())
             if (titleFilterNumeric.test(entry.getKey(), entry.getValue()))
-                System.out.println(entry.getValue());
+                System.out.println("number in title: " + entry.getValue());
 
         // this will print only movies that contain "The" in the title
         for (Map.Entry<Integer, String> entry : henryFondaMovies.entrySet())
             if (titleFilterThe.test(entry.getKey(), entry.getValue()))
-                System.out.println(entry.getValue());
+                System.out.println("the in title: " + entry.getValue());
 
     }
 
