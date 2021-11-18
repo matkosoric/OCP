@@ -21,7 +21,7 @@ public class InstantExample {
 
         // creating Instance from ZonedDateTime
         LocalDate date = LocalDate.of(2049, Month.MAY, 20);
-        LocalTime time = LocalTime.of (12, 00);
+        LocalTime time = LocalTime.of(12, 00);
         ZoneId zone = ZoneId.of("Asia/Tbilisi");
         ZonedDateTime zonedDateTime = ZonedDateTime.of(date, time, zone);
         Instant instant = zonedDateTime.toInstant();

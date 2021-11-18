@@ -6,7 +6,7 @@ package edu.matkosoric.class_.design.fox;
  * Created by © Matko Soric.
  */
 
-public class Fox implements Forest, Town{
+public class Fox implements Forest, Town {
 
     // Fox class must provide implementation for the inhabit method
     // since it is implementing two interfaces.

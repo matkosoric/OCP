@@ -6,7 +6,10 @@ package edu.matkosoric.map.tree.map;
  * Created by © Matko Soric.
  */
 
-import java.util.*;
+import java.util.Collection;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
 
 public class Spielberg {
 

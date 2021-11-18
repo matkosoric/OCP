@@ -44,8 +44,8 @@ public class CoenBrothersMovies {
         // looping with iterator, used before Java 5
         Iterator iter = coenMovies.iterator();
         int index = 0;
-        while(iter.hasNext()) {
-            System.out.println(index + ": " + (String)iter.next());
+        while (iter.hasNext()) {
+            System.out.println(index + ": " + (String) iter.next());
             index++;
         }
 
@@ -82,7 +82,7 @@ public class CoenBrothersMovies {
 
 
         // updating item value
-        System.out.println(coenMovies.set(4,"No Country for Old Men")); // returns old element and replaces it with new one
+        System.out.println(coenMovies.set(4, "No Country for Old Men")); // returns old element and replaces it with new one
         System.out.println(coenMovies);
 
     }

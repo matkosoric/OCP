@@ -6,17 +6,15 @@ package edu.matkosoric.concurrency.concurrent.collection;
  * Created by © Matko Soric.
  */
 
-import edu.matkosoric.concurrency.sync.EU_GDP;
-
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.concurrent.*;
+import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 public class SpaceAgencies {
 
 
-
-    public static void main(String[] args) throws  InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
 
         // output can not be predicted with ordinary LinkedList
 
@@ -39,10 +37,12 @@ public class SpaceAgencies {
 
             executorService = Executors.newFixedThreadPool(7);
 
-            for (int i = 0; i < 100; i ++) {
+            for (int i = 0; i < 100; i++) {
                 final int a = i;
-                executorService.submit( () -> {System.out.println( a + " " + spaceAgencies_regular.get(a));});
-                executorService.submit(  () -> spaceAgencies_regular.add(String.valueOf(a)));
+                executorService.submit(() -> {
+                    System.out.println(a + " " + spaceAgencies_regular.get(a));
+                });
+                executorService.submit(() -> spaceAgencies_regular.add(String.valueOf(a)));
             }
 
         } finally {

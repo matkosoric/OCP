@@ -6,6 +6,8 @@ public class Spain extends EuropeanUnion {
 
     // compiles
     // overloads parent method
-    public <T> Collection<T> havingCapitalCity(Collection<T> arg) {return null;}
+    public <T> Collection<T> havingCapitalCity(Collection<T> arg) {
+        return null;
+    }
 
 }

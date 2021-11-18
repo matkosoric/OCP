@@ -15,7 +15,7 @@ public class SchedulingThreads {
     static int counter = 0;
     static ScheduledFuture<?> result3;
 
-    public static void main(String[] args) throws ExecutionException, InterruptedException{
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
 
         ScheduledExecutorService scheduledExecutorService = Executors.newSingleThreadScheduledExecutor();
 

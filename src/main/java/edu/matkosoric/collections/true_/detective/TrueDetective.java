@@ -13,7 +13,7 @@ public class TrueDetective {
 
     public static void main(String[] args) {
 
-        Map <String, Long> teamMap = new HashMap<>();
+        Map<String, Long> teamMap = new HashMap<>();
 
 //        teamMap.add ("Rust Cohle", 1L);  // does not compile, add is not a Map method.
 //        teamMap.put("Ruth Cohle", 1);    // does not compile, second parameter has to be Long, not int

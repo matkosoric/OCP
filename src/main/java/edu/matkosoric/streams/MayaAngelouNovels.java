@@ -19,8 +19,8 @@ public class MayaAngelouNovels {
         Stream<String> stream1 = Stream.empty();
         Stream<String> stream2 = Stream.of("I Know Why the Caged Bird Sings");
         Stream<String> stream3 = Stream.of("And Still I Rise",
-                                            "On The Pulse Of Morning",
-                                            "Gather Together In My Name");
+                "On The Pulse Of Morning",
+                "Gather Together In My Name");
         List<String> ordinaryList = Arrays.asList(
                 "Just Give Me a Cool Drink of Water 'fore I Diiie",
                 "Life Doesn't Frighten Me",

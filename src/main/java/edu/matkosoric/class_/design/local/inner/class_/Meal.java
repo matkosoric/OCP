@@ -25,14 +25,14 @@ public class Meal {
 
 //        new Soup();     // does not compile before the class
         class Soup {
-            public void soup () {
+            public void soup() {
                 System.out.println("eating soup");
             }
         }
         new Soup();
 
         class MainDish {
-            public void eatingMainDish () {
+            public void eatingMainDish() {
                 System.out.println("eating main dish");
             }
         }
@@ -61,7 +61,8 @@ public class Meal {
         // local inner class has access to all elements of outer class
         class Spoon {
             String spoonOf = meal;
-            public void info () {
+
+            public void info() {
                 System.out.println(spoonOf);
             }
         }

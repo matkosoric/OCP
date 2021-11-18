@@ -20,7 +20,7 @@ public class Planet {
         return id;
     }
 
-//    @Override         // does not compile, not a proper override
+    //    @Override         // does not compile, not a proper override
     public boolean equals(Planet planet) {
         return this.innerPlanet == planet.innerPlanet;
     }
@@ -42,7 +42,7 @@ public class Planet {
         jupiter.name = "Jupiter";
         jupiter.innerPlanet = false;
 
-        if(mercury.equals(earth)) System.out.println("Mercury and Earth are inner planets!");
+        if (mercury.equals(earth)) System.out.println("Mercury and Earth are inner planets!");
         else System.out.println("Mercury and Earth are not in the same group of planets!");
 
         if (earth.equals(jupiter)) System.out.println("Earth and Jupiter are in the same group of planets!");

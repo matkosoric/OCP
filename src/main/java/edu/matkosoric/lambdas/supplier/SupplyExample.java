@@ -15,7 +15,7 @@ public class SupplyExample {
 
     public static void main(String[] args) {
 
-        Supplier<String> drHouse =  () -> "Dr. House";
+        Supplier<String> drHouse = () -> "Dr. House";
         System.out.println(drHouse.get());
 
         Supplier<Integer> startingYear = () -> 2004;

@@ -15,7 +15,7 @@ public class BiConsumerExample {
 
     public static void main(String[] args) {
 
-        HashMap<Integer,String> whitneyHustonAlbums = new HashMap<>();
+        HashMap<Integer, String> whitneyHustonAlbums = new HashMap<>();
         whitneyHustonAlbums.put(1990, "I'm Your Baby Tonight");
         whitneyHustonAlbums.put(1998, "My Love Is Your Love");
         whitneyHustonAlbums.put(2009, "I Look to You");
@@ -23,11 +23,11 @@ public class BiConsumerExample {
         HashMap<String, Integer> reversedColumnsWHA = new HashMap<>();
 
         // a simple way to reverse 'columns' in a map
-        BiConsumer<Integer, String> biConsumer = (a,b) -> reversedColumnsWHA.put(b,a);
+        BiConsumer<Integer, String> biConsumer = (a, b) -> reversedColumnsWHA.put(b, a);
         whitneyHustonAlbums.forEach(biConsumer);
 
-        whitneyHustonAlbums.forEach((a,b) -> System.out.println(a + ": " + b));
-        reversedColumnsWHA.forEach( (a,b) -> System.out.println(a + ": " + b));
+        whitneyHustonAlbums.forEach((a, b) -> System.out.println(a + ": " + b));
+        reversedColumnsWHA.forEach((a, b) -> System.out.println(a + ": " + b));
 
     }
 

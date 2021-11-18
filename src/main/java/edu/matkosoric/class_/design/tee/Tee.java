@@ -2,9 +2,9 @@ package edu.matkosoric.class_.design.tee;
 
 import java.util.Collection;
 
-class Tee extends Water{
+class Tee extends Water {
 
-    public void print(Object obj){
+    public void print(Object obj) {
         System.out.println("[" + obj + "]");
     }
 
@@ -15,7 +15,7 @@ class Tee extends Water{
 //        }
 //    }
 
-    public void print (Collection collection){
+    public void print(Collection collection) {
         print(collection.toArray());
     }
 

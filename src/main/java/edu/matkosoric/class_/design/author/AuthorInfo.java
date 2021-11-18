@@ -10,8 +10,10 @@ import java.lang.annotation.Target;
 public @interface AuthorInfo {
 
     String author() default "";
+
     String date();
-    String [] comments() default {};
+
+    String[] comments() default {};
 
 }
 

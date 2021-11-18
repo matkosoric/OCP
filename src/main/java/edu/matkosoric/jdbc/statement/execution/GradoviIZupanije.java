@@ -121,7 +121,7 @@ public class GradoviIZupanije {
 
         // check whether database has been properly shut down
         try {
-            DriverManager.getConnection ("jdbc:derby:;shutdown=true");
+            DriverManager.getConnection("jdbc:derby:;shutdown=true");
         } catch (SQLException ex) {
             if (((ex.getErrorCode() == 50000) && ("XJ015".equals(ex.getSQLState())))) {
                 System.out.println("Derby shut down normally");
@@ -133,7 +133,7 @@ public class GradoviIZupanije {
     }
 
 
-    static void printingSQLresults (ResultSet resultSet) throws SQLException{
+    static void printingSQLresults(ResultSet resultSet) throws SQLException {
         while (resultSet.next()) {
             System.out.printf("%-10d - %-25s - %-7d - %d\n",
                     resultSet.getInt(1),

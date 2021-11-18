@@ -17,7 +17,7 @@ public class Movie {
     private int genreCode;
 
     @Override
-    public boolean equals (Object obj) {
+    public boolean equals(Object obj) {
         if (!(obj instanceof Movie)) return false;
         Movie parameterMovie = (Movie) obj;
         return this.id == parameterMovie.id;

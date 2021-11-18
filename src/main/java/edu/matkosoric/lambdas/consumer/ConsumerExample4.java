@@ -15,10 +15,16 @@ public class ConsumerExample4 {
         // Demonstration of Consumer functional interface
         // using andThen() method results with accept() method being executed for each consumer separately
 
-        Consumer<Integer> increaseBy1Consumer = arg -> {arg++; System.out.println(arg);};
+        Consumer<Integer> increaseBy1Consumer = arg -> {
+            arg++;
+            System.out.println(arg);
+        };
         increaseBy1Consumer.accept(1);
 
-        Consumer<Integer> increaseBy2Consumer = arg -> {arg = arg + 2; System.out.println(arg);};
+        Consumer<Integer> increaseBy2Consumer = arg -> {
+            arg = arg + 2;
+            System.out.println(arg);
+        };
         increaseBy2Consumer.accept(2);
 
 

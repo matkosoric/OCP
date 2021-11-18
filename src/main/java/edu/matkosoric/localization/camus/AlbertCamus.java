@@ -21,7 +21,7 @@ public class AlbertCamus {
         ResourceBundle camusFr = ResourceBundle.getBundle("edu.matkosoric.localization.camus.CamusNovels", Locale.FRANCE);
 
         Set<String> keys = camusEng.keySet();
-        keys.stream().map(k -> k  + " - " + camusEng.getString(k)
+        keys.stream().map(k -> k + " - " + camusEng.getString(k)
                 + " (" + camusFr.getString(k) + ")").forEach(System.out::println);
 
     }

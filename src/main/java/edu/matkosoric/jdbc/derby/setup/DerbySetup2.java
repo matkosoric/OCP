@@ -6,13 +6,7 @@ package edu.matkosoric.jdbc.derby.setup;
  * Created by © Matko Soric.
  */
 
-import java.sql.Connection;
-import java.sql.Driver;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 
 public class DerbySetup2 {
@@ -34,7 +28,7 @@ public class DerbySetup2 {
 
         try {
             DriverManager.registerDriver(new org.apache.derby.jdbc.EmbeddedDriver());
-            conn = DriverManager.getConnection ("jdbc:derby:derbyMatko2;create=true");
+            conn = DriverManager.getConnection("jdbc:derby:derbyMatko2;create=true");
             conn.setAutoCommit(false);
             stmt = conn.createStatement();
             stmt.execute(createSQL);
@@ -78,7 +72,7 @@ public class DerbySetup2 {
         }
 
         try {
-            DriverManager.getConnection ("jdbc:derby:;shutdown=true");
+            DriverManager.getConnection("jdbc:derby:;shutdown=true");
         } catch (SQLException ex) {
             if (((ex.getErrorCode() == 50000) && ("XJ015".equals(ex.getSQLState())))) {
                 System.out.println("Derby shut down normally");

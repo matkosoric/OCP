@@ -20,11 +20,11 @@ public class HumanAncestors {
         List humanAncestors = new ArrayList<>();
         humanAncestors.add("homo habilis");
         humanAncestors.add("homo erectus");
-        humanAncestors.add(0,"homo floresiensis");
+        humanAncestors.add(0, "homo floresiensis");
         humanAncestors.add(null);
         humanAncestors.add(5);
         humanAncestors.add(false);
-        humanAncestors.add(2,3.0);
+        humanAncestors.add(2, 3.0);
         humanAncestors.add('Y');
 //        humanAncestors.add(2L, 2);          // does not compile, index can not be long
 //        humanAncestors.add(true, false);    // does not compile, index can not be boolean
@@ -36,7 +36,7 @@ public class HumanAncestors {
         ArrayList<String> humanAncestors2 = new ArrayList<String>();
         humanAncestors2.add("homo habilis");
         humanAncestors2.add("homo erectus");
-        humanAncestors2.add(0,"homo floresiensis");
+        humanAncestors2.add(0, "homo floresiensis");
         humanAncestors2.add(null);
 //        humanAncestors2.add(5);              // does not compile
 //        humanAncestors2.add(false);          // does not compile
@@ -53,11 +53,11 @@ public class HumanAncestors {
         List humanAncestors3 = new ArrayList<String>();
         humanAncestors3.add("homo habilis");
         humanAncestors3.add("homo erectus");
-        humanAncestors3.add(0,"homo floresiensis");
+        humanAncestors3.add(0, "homo floresiensis");
         humanAncestors3.add(null);
         humanAncestors3.add(5);              // does not compile
         humanAncestors3.add(false);          // does not compile
-        humanAncestors3.add(2,3.0);          // does not compile
+        humanAncestors3.add(2, 3.0);          // does not compile
         humanAncestors3.add('Y');            // does not compile
 //        humanAncestors3.add(2L, 2);          // does not compile, index can not be long
 //        humanAncestors3.add(true, false);    // does not compile, index can not be boolean

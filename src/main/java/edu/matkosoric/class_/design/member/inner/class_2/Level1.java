@@ -19,9 +19,9 @@ public class Level1 {
         Level1.Level2 y2 = x.new Level2();
 //        Level2 wrongY = new Level2();           // does not compile
 //        Level1.Level2 wrongY2 = new Level2();   // does not compile
-        Level2 validY3 = new Level1(). new Level2();
+        Level2 validY3 = new Level1().new Level2();
         Level2.Level3 z = y.new Level3();
-        Level2.Level3 z2 = new Level1().new Level2(). new Level3();
+        Level2.Level3 z2 = new Level1().new Level2().new Level3();
 
         z.printInfo();
 
@@ -33,7 +33,8 @@ public class Level1 {
 
         class Level3 {
             private int level = 3;
-            public void printInfo () {
+
+            public void printInfo() {
                 System.out.println(level);              // 3
                 System.out.println(this.level);         // 3
                 System.out.println(Level3.this.level);  // 3

@@ -2,7 +2,6 @@ package edu.matkosoric.class_.design.greetings2;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 
 public class FrenchRun {
 

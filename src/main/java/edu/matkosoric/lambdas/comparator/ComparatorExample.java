@@ -1,6 +1,5 @@
 package edu.matkosoric.lambdas.comparator;
 
-import javax.swing.*;
 import java.util.Comparator;
 
 public class ComparatorExample {

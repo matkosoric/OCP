@@ -23,7 +23,7 @@ public class CallingStringLength {
 
             executorService = Executors.newSingleThreadExecutor();
 
-            Future<Integer> result = executorService.submit( () -> "Denzel Washinton".length());
+            Future<Integer> result = executorService.submit(() -> "Denzel Washinton".length());
 
             System.out.println(result.get());
 

@@ -38,7 +38,6 @@ public class MusicInstruments {
 }
 
 
-
 // Does not compile
 // Failing with: private interface methods are not supported in -source 8
 //interface PlayingLeadGuitar {
@@ -47,21 +46,26 @@ public class MusicInstruments {
 //}
 
 interface PlayingDrums {
-    public static void play() {;}
-    public boolean play2 ();
+    public static void play() {
+        ;
+    }
+
+    public boolean play2();
 }
 
 // Does not compile if used in lambda expression
 // Functional interface must have only one abstract method
 interface PlayingBass {
     public void play();
-    public void play2 (String str);
+
+    public void play2(String str);
 }
 
 // Does not compile if used in lambda expression
 // Functional interface must have only one abstract method
 interface PlayingKeyboard {
     public void play();
+
     public void play2();
 }
 

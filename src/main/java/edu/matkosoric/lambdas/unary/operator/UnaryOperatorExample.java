@@ -17,7 +17,7 @@ public class UnaryOperatorExample {
 
         // UnaryOperator has to have a matching between its parameter and return type
 
-        UnaryOperator<Integer> square = a -> a*a;
+        UnaryOperator<Integer> square = a -> a * a;
         System.out.println(square.apply(3));
         System.out.println(square.apply(4));
         System.out.println(square.apply(5));

@@ -1,13 +1,13 @@
 package edu.matkosoric.class_.design.tee;
 
-class Water{
+class Water {
 
-    protected void print(Object obj){
+    protected void print(Object obj) {
         System.out.println(obj);
     }
 
-    public final void print(Object... objects){
-        for (Object object : objects){
+    public final void print(Object... objects) {
+        for (Object object : objects) {
             print(object);
         }
     }

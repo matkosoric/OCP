@@ -18,7 +18,7 @@ public class WriteAndRead {
     // write and read serializable Java object
 
     // write data to the file
-    private static void write (List<ApolloMission> missions, File destination) throws IOException {
+    private static void write(List<ApolloMission> missions, File destination) throws IOException {
 
         try (ObjectOutputStream output = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(destination)))) {
             for (ApolloMission element : missions)
@@ -28,7 +28,7 @@ public class WriteAndRead {
     }
 
     // read serialised data from the file and return proper Java object
-    private static List<ApolloMission> read (File source) throws IOException, ClassNotFoundException {
+    private static List<ApolloMission> read(File source) throws IOException, ClassNotFoundException {
 
         List<ApolloMission> missions = new ArrayList<ApolloMission>();
 
@@ -43,8 +43,6 @@ public class WriteAndRead {
         }
         return missions;
     }
-
-
 
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {

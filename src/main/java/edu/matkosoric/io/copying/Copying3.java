@@ -15,7 +15,7 @@ public class Copying3 {
     // copying with BufferedReader and BufferedWriter
 
     // read data
-    public static List<String> readFile (File source) throws IOException {
+    public static List<String> readFile(File source) throws IOException {
 
         List<String> dataSet = new ArrayList<>();
 
@@ -29,7 +29,7 @@ public class Copying3 {
     }
 
     // write data
-    public static void writeFile (List<String> data, File destination) throws IOException {
+    public static void writeFile(List<String> data, File destination) throws IOException {
 
         try (BufferedWriter output = new BufferedWriter(new FileWriter(destination))) {
             for (String element : data) {
@@ -45,8 +45,8 @@ public class Copying3 {
 
         String currentDirectory = System.getProperty("user.dir");
 
-        File source = new File (currentDirectory + "/src/main/java/edu/matkosoric/io/sample/jelena/rozga/GospeMoja.txt");
-        File destination = new File (currentDirectory + "/src/main/java/edu/matkosoric/io/copying/GM.txt");
+        File source = new File(currentDirectory + "/src/main/java/edu/matkosoric/io/sample/jelena/rozga/GospeMoja.txt");
+        File destination = new File(currentDirectory + "/src/main/java/edu/matkosoric/io/copying/GM.txt");
 
         List<String> lyrics = readFile(source);
         writeFile(lyrics, destination);

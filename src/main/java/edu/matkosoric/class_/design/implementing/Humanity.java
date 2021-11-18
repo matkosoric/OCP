@@ -9,5 +9,4 @@ package edu.matkosoric.class_.design.implementing;
 public interface Humanity extends Mortality {
 
 
-
 }

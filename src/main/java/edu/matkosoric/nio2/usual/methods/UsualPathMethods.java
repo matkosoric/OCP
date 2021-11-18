@@ -8,7 +8,6 @@ package edu.matkosoric.nio2.usual.methods;
 
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.LinkOption;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -24,7 +23,7 @@ public class UsualPathMethods {
         Path belanPathDeeper = Paths.get(currentDirectory + "/src/main/java/edu/matkosoric/nio2/sample/neno/belan/more/lyrics/sunny_day.txt");
         Path belanPathRelative = Paths.get("src/main/java/edu/matkosoric/nio2/sample/neno/belan/kavana.txt");
         Path belanPathRelative2 = Paths.get("src/main/java/edu/matkosoric/nio2/sample/neno/belan/more/lyrics/sunny_day.txt");
-        Path belanPathPeriod= Paths.get("../../../../../../../../kavana.txt");
+        Path belanPathPeriod = Paths.get("../../../../../../../../kavana.txt");
 
         System.out.println("Filename: " + belanPath.getFileName());
         System.out.println("Root: " + belanPath.getRoot());
@@ -90,7 +89,7 @@ public class UsualPathMethods {
 
         // createDirectory() - can create new directory only in a preexisting directory
         // if directory already exists, it will throw FileAlreadyExistsException at runtime
-        Path lyrics2 = Paths.get (currentDirectory + "/src/main/java/edu/matkosoric/nio2/sample/neno/belan/lyrics2");
+        Path lyrics2 = Paths.get(currentDirectory + "/src/main/java/edu/matkosoric/nio2/sample/neno/belan/lyrics2");
         Path copying = Paths.get(currentDirectory + "/src/main/java/edu/matkosoric/nio2/sample/neno/belan/lyrics2/kavana_kopija");
         Files.deleteIfExists(copying);
         Files.deleteIfExists(lyrics2);

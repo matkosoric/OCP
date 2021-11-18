@@ -19,17 +19,18 @@ public class Voyage {
 }
 
 enum Travelling {
-    SHIP ("water", true), TRAIN("land", false), AEROPLANE("air", true);
+    SHIP("water", true), TRAIN("land", false), AEROPLANE("air", true);
     private String medium;
     private boolean hasCaptain;
-    private Travelling (String medium, boolean hasCaptain) {
+
+    private Travelling(String medium, boolean hasCaptain) {
         this.medium = medium;
         this.hasCaptain = hasCaptain;
     }
 
-    public void printInfo () {
+    public void printInfo() {
         System.out.println(this.name() + " uses " + this.medium + " as a medium of transportation.");
-        if (this.hasCaptain) System.out.println(this. name() + " has a captain.");
+        if (this.hasCaptain) System.out.println(this.name() + " has a captain.");
         if (!this.hasCaptain) System.out.println(this.name() + " does not have a captain.");
     }
 }

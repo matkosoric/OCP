@@ -13,7 +13,7 @@ public class CountingMoney {
 
 
     // simulation of a small time-consuming task
-    public Long smallTransaction (Long transactionProfit) {
+    public Long smallTransaction(Long transactionProfit) {
         try {
             Thread.sleep(10);
         } catch (InterruptedException ie) {
@@ -25,12 +25,12 @@ public class CountingMoney {
 
 
     // regular Stream()
-    public void processMyMoney (List<Long> data) {
+    public void processMyMoney(List<Long> data) {
         data.stream().map(i -> smallTransaction(i)).count();    // created map object is not used
     }
 
     // parallelStream()
-    public void processMyMoneyWithConcurrency (List<Long> data) {
+    public void processMyMoneyWithConcurrency(List<Long> data) {
         data.parallelStream().map(i -> smallTransaction(i)).count();    // created map object is not used
     }
 
@@ -42,7 +42,8 @@ public class CountingMoney {
 
         // initial data set
         List<Long> listOfDailyTransactions = new ArrayList<>();
-        for (int i = 0; i < 2000; i++) listOfDailyTransactions.add((Long) (new Double(Math.random()*10L).longValue()));
+        for (int i = 0; i < 2000; i++)
+            listOfDailyTransactions.add((Long) (new Double(Math.random() * 10L).longValue()));
 
 
         // sequential processing, lasts about 20 seconds

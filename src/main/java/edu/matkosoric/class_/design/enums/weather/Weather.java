@@ -9,12 +9,12 @@ public class Weather {
     enum WeatherType implements Serializable {
 
         SUNNY("Sunnny"),
-        RAINING ("Raining"),
-        SNOWING (" Snowing");
+        RAINING("Raining"),
+        SNOWING(" Snowing");
 
         String description;
 
-        private WeatherType (String description) {
+        private WeatherType(String description) {
             this.description = description;
         }
 

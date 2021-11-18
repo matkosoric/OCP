@@ -27,17 +27,18 @@ public class SupplyExample3 {
         cmMap.put(2006, "The Road");
         cmMap.put(1968, "Outer Dark");
 
-        cmMap.forEach((year, title) -> {    staticYear = year;
-                                            staticTitle = title;
-                                            cmNovel tempNovel = cormacMcCarthyGenerator.get();
+        cmMap.forEach((year, title) -> {
+            staticYear = year;
+            staticTitle = title;
+            cmNovel tempNovel = cormacMcCarthyGenerator.get();
             System.out.println("TITLE: " + tempNovel.title + ", YEAR: " + tempNovel.year);
         });
 
 
     }
 
-    public static cmNovel createNovel () {
-                return new cmNovel(staticYear, staticTitle);
+    public static cmNovel createNovel() {
+        return new cmNovel(staticYear, staticTitle);
     }
 
 }

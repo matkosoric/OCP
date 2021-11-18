@@ -15,7 +15,7 @@ public class DerbySetup {
     // and print them.
     // try with resources automatically closes connection
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
 
         String url = "jdbc:derby:derbyMatko;create=true";
 

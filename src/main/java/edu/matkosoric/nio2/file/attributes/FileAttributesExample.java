@@ -20,7 +20,7 @@ public class FileAttributesExample {
 
         Path directory = Paths.get("E:\\Java projekti\\OCP\\src\\edu\\matkosoric\\nio2\\sample\\neno\\belan");
         Path file = Paths.get("E:\\Java projekti\\OCP\\src\\edu\\matkosoric\\nio2\\sample\\neno\\belan\\rijeka_snova.txt");
-        Path link = Paths.get ("E:\\Java projekti\\OCP\\src\\edu\\matkosoric\\nio2\\sample\\neno\\belan\\win_shortcut_to_sunny_day.lnk");
+        Path link = Paths.get("E:\\Java projekti\\OCP\\src\\edu\\matkosoric\\nio2\\sample\\neno\\belan\\win_shortcut_to_sunny_day.lnk");
 
         System.out.println(Files.isDirectory(directory));
         System.out.println(Files.isDirectory(file));

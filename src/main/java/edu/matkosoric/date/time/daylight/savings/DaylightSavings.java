@@ -17,7 +17,7 @@ public class DaylightSavings {
     public static void main(String[] args) {
 
         LocalDate date = LocalDate.of(2026, Month.MARCH, 29);
-        LocalTime time = LocalTime.of (1, 59);
+        LocalTime time = LocalTime.of(1, 59);
         ZoneId zone = ZoneId.of("Europe/Zagreb");
         ZonedDateTime zonedDateTime = ZonedDateTime.of(date, time, zone);
 
@@ -33,7 +33,7 @@ public class DaylightSavings {
 
         // moving the clock backwards & comparison with GMT
         LocalDate date2 = LocalDate.of(2026, Month.OCTOBER, 25);
-        LocalTime time2 = LocalTime.of (1, 59);
+        LocalTime time2 = LocalTime.of(1, 59);
         ZoneId zone2 = ZoneId.of("Europe/Zagreb");
         ZonedDateTime zonedDateTime2 = ZonedDateTime.of(date2, time2, zone2);
 

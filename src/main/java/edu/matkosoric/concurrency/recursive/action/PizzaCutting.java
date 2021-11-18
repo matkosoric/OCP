@@ -10,7 +10,7 @@ import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.ForkJoinTask;
 import java.util.concurrent.RecursiveAction;
 
-public class PizzaCutting extends RecursiveAction{
+public class PizzaCutting extends RecursiveAction {
 
     // pizza cutting is sort of a recursive action.
     // each entity is cut in half until a certain base case is achieved.

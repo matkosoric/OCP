@@ -21,32 +21,35 @@ public class Waiting {
 
             executorService = Executors.newCachedThreadPool();
 
-            Future<?> result = executorService.submit(() -> { System.out.println("Thread 1 start");
-                                                                try {
-                                                                    Thread.sleep(5000);
-                                                                } catch (InterruptedException e) {
-                                                                    System.out.println("Interrupted! 1");
-                                                                }
-                                                                    System.out.println("Thread 1 end");
-                                                                });
+            Future<?> result = executorService.submit(() -> {
+                System.out.println("Thread 1 start");
+                try {
+                    Thread.sleep(5000);
+                } catch (InterruptedException e) {
+                    System.out.println("Interrupted! 1");
+                }
+                System.out.println("Thread 1 end");
+            });
 
-            result = executorService.submit(() -> {System.out.println("Thread 2 start");
-                                                        try {
-                                                            Thread.sleep(5000);
-                                                        } catch (InterruptedException e) {
-                                                            System.out.println("Interrupted! 2");
-                                                        }
-                                                            System.out.println("Thread 2 end");
-                                                        });
+            result = executorService.submit(() -> {
+                System.out.println("Thread 2 start");
+                try {
+                    Thread.sleep(5000);
+                } catch (InterruptedException e) {
+                    System.out.println("Interrupted! 2");
+                }
+                System.out.println("Thread 2 end");
+            });
 
-            result = executorService.submit(() -> {System.out.println("Thread 3 start");
-                                                        try {
-                                                            Thread.sleep(5000);
-                                                        } catch (InterruptedException e) {
-                                                            System.out.println("Interrupted! 3");
-                                                        }
-                                                            System.out.println("Thread 3 end");
-                                                        });
+            result = executorService.submit(() -> {
+                System.out.println("Thread 3 start");
+                try {
+                    Thread.sleep(5000);
+                } catch (InterruptedException e) {
+                    System.out.println("Interrupted! 3");
+                }
+                System.out.println("Thread 3 end");
+            });
 
         } finally {
             if (executorService != null) executorService.shutdown();
@@ -57,7 +60,7 @@ public class Waiting {
 
             executorService.awaitTermination(2, TimeUnit.SECONDS);
 
-            if(executorService.isTerminated())
+            if (executorService.isTerminated())
                 System.out.println("Every thread is complete");
             else
                 System.out.println("Something is still running.");

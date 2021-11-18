@@ -41,7 +41,7 @@ class cnMovie {
     Integer year;
     Integer decade;
 
-    public cnMovie (String title, Integer year, Integer decade) {
+    public cnMovie(String title, Integer year, Integer decade) {
         this.movieTitle = title;
         this.year = year;
         this.decade = decade;

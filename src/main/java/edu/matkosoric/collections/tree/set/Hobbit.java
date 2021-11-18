@@ -52,7 +52,7 @@ public class Hobbit {
     }
 }
 
-class LordOfTheRings implements Comparable{
+class LordOfTheRings implements Comparable {
 
     String title;
     Integer releaseYear;

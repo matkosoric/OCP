@@ -16,15 +16,15 @@ public class Reductionism2 {
     public static void main(String[] args) {
 
         // ordinal stream
-        System.out.println(Arrays.asList(1,2,3,4,5,6,7,8,9,10)
-            .stream()
-            .reduce(0,(a,b) ->(a-b))
+        System.out.println(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+                .stream()
+                .reduce(0, (a, b) -> (a - b))
         );
 
         // parallel stream
-        System.out.println(Arrays.asList(1,2,3,4,5,6,7,8,9,10)
+        System.out.println(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
                 .parallelStream()
-                .reduce(0,(a,b) ->(a-b))
+                .reduce(0, (a, b) -> (a - b))
         );
 
     }

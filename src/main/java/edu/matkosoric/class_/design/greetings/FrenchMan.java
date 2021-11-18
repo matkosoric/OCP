@@ -6,7 +6,7 @@ public class FrenchMan {
         System.out.println("Bonjour le monde!");
     }
 
-    public void bonojur () {
+    public void bonojur() {
         print();
     }
 

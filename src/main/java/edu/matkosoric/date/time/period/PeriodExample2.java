@@ -16,7 +16,7 @@ public class PeriodExample2 {
 
     public static void main(String[] args) {
 
-        LocalDate startDate = LocalDate.of (1985, Month.OCTOBER, 26);
+        LocalDate startDate = LocalDate.of(1985, Month.OCTOBER, 26);
         LocalDate endDate = LocalDate.of(1955, Month.NOVEMBER, 5);
 
         Period distance = Period.between(startDate, endDate);

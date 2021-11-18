@@ -36,7 +36,6 @@ public class DurationsExample {
         System.out.println(everyNanosecond);
 
 
-
         // creating Duration with ChronoUnit
         Duration chrDaily1 = Duration.of(1, ChronoUnit.DAYS);
         System.out.println(chrDaily1);

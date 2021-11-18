@@ -6,7 +6,6 @@ package edu.matkosoric.date.time.instant;
  * Created by © Matko Soric.
  */
 
-import java.math.BigInteger;
 import java.time.Duration;
 import java.time.Instant;
 
@@ -18,15 +17,17 @@ public class InstantExample2 {
 
         // benchmark for comparing for loop and while loop
         Instant start = Instant.now();
-        for (int i = 0; i < 100000; i++)
-            {System.out.println(i*i);}
+        for (int i = 0; i < 100000; i++) {
+            System.out.println(i * i);
+        }
         Instant end = Instant.now();
 
         Instant start2 = Instant.now();
         int i = 0;
-        while (i < 100000)
-            {System.out.println(i*i);
-            i++;}
+        while (i < 100000) {
+            System.out.println(i * i);
+            i++;
+        }
         Instant end2 = Instant.now();
 
         System.out.println("FOR LOOP:" + Duration.between(start, end).toMillis());

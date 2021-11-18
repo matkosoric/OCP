@@ -6,8 +6,6 @@ package edu.matkosoric.io.serialization.wrong;
  * Created by © Matko Soric.
  */
 
-import edu.matkosoric.io.serialization.wrong.ApolloMissionWrong;
-
 import java.io.*;
 import java.time.LocalDate;
 import java.time.Month;
@@ -20,7 +18,7 @@ public class WriteAndReadWrong {
     // write and read serializable Java object with transient and static fields
 
     // write data to the file
-    private static void write (List<ApolloMissionWrong> missions, File destination) throws IOException {
+    private static void write(List<ApolloMissionWrong> missions, File destination) throws IOException {
 
         try (ObjectOutputStream output = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(destination)))) {
             for (ApolloMissionWrong element : missions)
@@ -30,7 +28,7 @@ public class WriteAndReadWrong {
     }
 
     // read serialised data from the file and return proper Java object
-    private static List<ApolloMissionWrong> read (File source) throws IOException, ClassNotFoundException {
+    private static List<ApolloMissionWrong> read(File source) throws IOException, ClassNotFoundException {
 
         List<ApolloMissionWrong> missions = new ArrayList<ApolloMissionWrong>();
 
@@ -45,8 +43,6 @@ public class WriteAndReadWrong {
         }
         return missions;
     }
-
-
 
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {

@@ -12,7 +12,7 @@ public class CamusNovels_fr_FR extends ListResourceBundle {
 
     @Override
     protected Object[][] getContents() {
-        return new Object[][] {
+        return new Object[][]{
 
                 {"1942", "L'Étranger"},
                 {"1947", "La Peste"},

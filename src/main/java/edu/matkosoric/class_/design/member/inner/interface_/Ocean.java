@@ -19,7 +19,7 @@ public class Ocean {
         y.swim();
     }
 
-    class Fish implements Swimming{
+    class Fish implements Swimming {
         @Override
         public void swim() {
             System.out.println("this fish is swimming.");

@@ -12,7 +12,7 @@ public class PrintingToFile {
 
     // print data from application to the file using the PrintWriter class
 
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args) throws IOException {
 
         String currentDirectory = System.getProperty("user.dir");
 

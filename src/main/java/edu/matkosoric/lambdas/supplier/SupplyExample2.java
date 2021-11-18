@@ -26,7 +26,7 @@ public class SupplyExample2 {
 
     }
 
-    public static Dexter create (Supplier<Dexter> dexParam) {
+    public static Dexter create(Supplier<Dexter> dexParam) {
         return dexParam.get();
     }
 
@@ -34,7 +34,7 @@ public class SupplyExample2 {
 
 class Dexter {
 
-    public Dexter () {
+    public Dexter() {
         System.out.println("Dexter object created.");
     }
 

@@ -13,14 +13,20 @@ public class Triathlon {
 
     // an example without CyclicBarrier
 
-    private void running () { System.out.println("...running...."); }
+    private void running() {
+        System.out.println("...running....");
+    }
 
-    private void cycling () { System.out.println("...cycling..."); }
+    private void cycling() {
+        System.out.println("...cycling...");
+    }
 
-    private void swimming () { System.out.println("...swimming..."); }
+    private void swimming() {
+        System.out.println("...swimming...");
+    }
 
 
-    public void participateInACompetition () {
+    public void participateInACompetition() {
         running();
         cycling();
         swimming();
@@ -37,8 +43,8 @@ public class Triathlon {
             Triathlon devonport2018 = new Triathlon();
 
             // there are four competitors that go through each stage at different pace
-            for (int i = 0; i < 4; i ++)
-                executorService.submit( () -> devonport2018.participateInACompetition());
+            for (int i = 0; i < 4; i++)
+                executorService.submit(() -> devonport2018.participateInACompetition());
 
         } finally {
             if (executorService != null) executorService.shutdown();

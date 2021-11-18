@@ -17,13 +17,13 @@ public class Adding {
     public static void main(String[] args) {
 
         // any list that extends abstract class Number can be used with summarize() method
-        List<Integer> intNumbers = Arrays.asList(1,2,3,4,5);
+        List<Integer> intNumbers = Arrays.asList(1, 2, 3, 4, 5);
         List<Double> doubleNumbers = Arrays.asList(6.0, 7.0, 8.0, 9.0, 10.0);
         List<AtomicInteger> aintNumbers = Arrays.asList(new AtomicInteger(11),
-                                                        new AtomicInteger(12),
-                                                        new AtomicInteger(13),
-                                                        new AtomicInteger(14),
-                                                        new AtomicInteger(15));
+                new AtomicInteger(12),
+                new AtomicInteger(13),
+                new AtomicInteger(14),
+                new AtomicInteger(15));
 
 
         System.out.println("Sum of integers: " + summarize(intNumbers));
@@ -32,7 +32,7 @@ public class Adding {
 
     }
 
-    private static Double summarize (List<? extends Number> listOfNumbers) {
+    private static Double summarize(List<? extends Number> listOfNumbers) {
         Double result = new Double(0);
         for (Number elementNumber : listOfNumbers) {
             result = result + elementNumber.doubleValue();

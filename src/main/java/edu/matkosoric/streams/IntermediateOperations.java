@@ -6,7 +6,6 @@ package edu.matkosoric.streams;
  * Created by © Matko Soric.
  */
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
@@ -20,12 +19,12 @@ public class IntermediateOperations {
     public static void main(String[] args) {
 
         // dataset
-        List<String> ridleyScottMovies = Arrays.asList( "Prometheus",
-                                                "Hannibal",
-                                                "Thelma & Louise",
-                                                "Thelma & Louise",
-                                                "Blade Runner",
-                                                "Alien");
+        List<String> ridleyScottMovies = Arrays.asList("Prometheus",
+                "Hannibal",
+                "Thelma & Louise",
+                "Thelma & Louise",
+                "Blade Runner",
+                "Alien");
 
         // filter()
         System.out.println("*************** FILTER ********");
@@ -55,7 +54,7 @@ public class IntermediateOperations {
         System.out.println("*************** FLATMAP ********");
         List<String> rsmovies2 = Arrays.asList("Gladiator", "American Gangster");
         List<String> rsmovies3 = Arrays.asList();
-        Stream<List<String>> RSStream5 = Stream.of(ridleyScottMovies, rsmovies3, rsmovies2 );
+        Stream<List<String>> RSStream5 = Stream.of(ridleyScottMovies, rsmovies3, rsmovies2);
         RSStream5.flatMap(x -> x.stream()).forEach(System.out::println);
 
         // sorted() - orders items
@@ -69,7 +68,7 @@ public class IntermediateOperations {
 
         // custom order by number of characters
         Stream<String> RSStream8 = ridleyScottMovies.stream();
-        RSStream8.sorted((x, y) -> x.length() - y.length() ).forEach(System.out::println);
+        RSStream8.sorted((x, y) -> x.length() - y.length()).forEach(System.out::println);
 
         // peek() - does not change the stream, helps in debugging
         System.out.println("*************** PEEK ********");

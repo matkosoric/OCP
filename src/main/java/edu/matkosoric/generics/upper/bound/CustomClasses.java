@@ -8,7 +8,6 @@ package edu.matkosoric.generics.upper.bound;
 
 import edu.matkosoric.class_.design.implementing.Human;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,7 +15,7 @@ public class CustomClasses {
 
     public static void main(String[] args) {
 
-        List <Life> list5 = new ArrayList<>();
+        List<Life> list5 = new ArrayList<>();
 //        list5.add(new Object());            // does not compile
         list5.add(new Life());
         list5.add(new Animals());
@@ -51,7 +50,7 @@ public class CustomClasses {
 //        list7.add(new Humans());        // does not compile
 
         // nothing can be added to the list with lower bound
-        List <? extends Human> list8 = new ArrayList<>();
+        List<? extends Human> list8 = new ArrayList<>();
 //        list8.add(new Object());        // does not compile
 //        list8.add(new Life());          // does not compile
 //        list8.add(new Animals());       // does not compile
@@ -59,39 +58,36 @@ public class CustomClasses {
 
 
         // a list with the upper bound
-        List <? super Life> list4 = new ArrayList<>();
+        List<? super Life> list4 = new ArrayList<>();
 //        list4.add(new Object());        // does not compile
         list4.add(new Life());
         list4.add(new Animals());
         list1.add(new Humans());
 
         // a list with the upper bound
-        List <? super Animals> list3 = new ArrayList<>();
+        List<? super Animals> list3 = new ArrayList<>();
 //        list3.add(new Object());        // does not compile
 //        list3.add(new Life());          // does not compile
         list3.add(new Animals());
         list3.add(new Humans());
 
         // a list with the upper bound
-        List <? super Humans> list6 = new ArrayList<>();
+        List<? super Humans> list6 = new ArrayList<>();
 //        list6.add(new Object());        // does not compile
 //        list6.add(new Life());          // does not compile
 //        list6.add(new Animals());       // does not compile
         list6.add(new Humans());
 
 
-
-
-
-
-
-
     }
 }
 
 
-class Life {}
+class Life {
+}
 
-class Animals extends Life {}
+class Animals extends Life {
+}
 
-class Humans extends Animals {}
+class Humans extends Animals {
+}

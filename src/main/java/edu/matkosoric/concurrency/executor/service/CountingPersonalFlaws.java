@@ -22,9 +22,9 @@ public class CountingPersonalFlaws {
             executorService = Executors.newSingleThreadExecutor();
             System.out.println("the beginning");
 
-            executorService.execute( () -> System.out.println("1. business flaw"));
-            executorService.execute( () -> System.out.println("2. character flaw")  );
-            executorService.execute( () -> System.out.println("3. intellectual flaw"));
+            executorService.execute(() -> System.out.println("1. business flaw"));
+            executorService.execute(() -> System.out.println("2. character flaw"));
+            executorService.execute(() -> System.out.println("3. intellectual flaw"));
 
             System.out.println("the end");
 

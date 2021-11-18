@@ -3,9 +3,6 @@ package edu.matkosoric._unclassified_yet;
 //import org.checkerframework.checker.interning.qual.Interned;
 //import org.checkerframework.checker.nullness.qual.NonNull;
 
-import java.util.function.Function;
-
-
 public class MonaLisa {
 
     public static void main(String[] args) {
@@ -20,10 +17,6 @@ public class MonaLisa {
 
     }
 //
-
-
-
-
 
 
 }

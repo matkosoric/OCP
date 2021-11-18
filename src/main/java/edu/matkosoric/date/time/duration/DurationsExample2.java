@@ -23,7 +23,7 @@ public class DurationsExample2 {
 
         Duration elapsedTime = Duration.between(dateOfBirth, now);
 
-        System.out.println("I have been on this planet for " + elapsedTime.toHours()+ " hours.");
+        System.out.println("I have been on this planet for " + elapsedTime.toHours() + " hours.");
 
     }
 

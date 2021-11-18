@@ -18,7 +18,7 @@ public class Employee {
         this.neighborhood = neighborhood;
     }
 
-    public String getNeighborhood () {
+    public String getNeighborhood() {
         return neighborhood;
     }
 
@@ -28,16 +28,14 @@ public class Employee {
     }
 
 
-
-
     public static void main(String[] args) {
 
         List<Employee> roster = new ArrayList<>();
-        roster.add(new Employee( "Tom", "Brooklyn"));
-        roster.add(new Employee( "Jim", "Brooklyn"));
-        roster.add(new Employee( "Max", "Brooklyn"));
-        roster.add(new Employee( "Pam", "Manhattan"));
-        roster.add(new Employee( "Liz", "Manhattan"));
+        roster.add(new Employee("Tom", "Brooklyn"));
+        roster.add(new Employee("Jim", "Brooklyn"));
+        roster.add(new Employee("Max", "Brooklyn"));
+        roster.add(new Employee("Pam", "Manhattan"));
+        roster.add(new Employee("Liz", "Manhattan"));
 
         Predicate<Employee> brooklynPredicate = e -> e.getNeighborhood().equals("Brooklyn");
         Function<Employee, Optional<String>> f = e -> Optional.ofNullable(e.getNeighborhood());

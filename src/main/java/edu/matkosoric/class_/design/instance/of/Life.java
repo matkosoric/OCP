@@ -55,14 +55,20 @@ public class Life {
 
 }
 
-class Animal implements Reproducing{}
+class Animal implements Reproducing {
+}
 
-class Horse extends Animal {}
+class Horse extends Animal {
+}
 
-class Plant {}
+class Plant {
+}
 
-class Pine extends Plant implements Reproducing{}
+class Pine extends Plant implements Reproducing {
+}
 
-class Rock {}
+class Rock {
+}
 
-interface Reproducing {}
+interface Reproducing {
+}

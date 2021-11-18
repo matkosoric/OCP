@@ -6,7 +6,9 @@ public class DrugAdministration {
 
     public boolean inhale(int a) {
         return a > 0;
-    };
+    }
+
+    ;
 
 //    Does not compile
 //    Missing return statement. println() does not return anything.
@@ -26,7 +28,7 @@ public class DrugAdministration {
 //        return ++amount;
 //    }
 
-    public void swallow () {
+    public void swallow() {
         System.out.println("now");
     }
 

@@ -16,7 +16,7 @@ public class BinaryOperatorExample {
 
         // both parameter's type and return type are the same,
         // and therefore, it is enough to specify the type only once
-        BinaryOperator<String> trimming = ((a,b) -> a.trim().concat(" ") + b.trim());
+        BinaryOperator<String> trimming = ((a, b) -> a.trim().concat(" ") + b.trim());
 
         System.out.println(trimming.apply("  Zagreb  ", "  Los Angeles  "));
         System.out.println(trimming.apply("  Zagreb  ", "  New    York  "));

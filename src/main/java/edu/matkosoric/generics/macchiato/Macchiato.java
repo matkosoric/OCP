@@ -6,11 +6,17 @@ package edu.matkosoric.generics.macchiato;
  * Created by © Matko Soric.
  */
 
-public class Macchiato <T> {
+public class Macchiato<T> {
 
     T t;
-    public Macchiato (T t) {this.t = t;}
-    public String toString() {return t.toString();}
+
+    public Macchiato(T t) {
+        this.t = t;
+    }
+
+    public String toString() {
+        return t.toString();
+    }
 
     public static void main(String[] args) {
 

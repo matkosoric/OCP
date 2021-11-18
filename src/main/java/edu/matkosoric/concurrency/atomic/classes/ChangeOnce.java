@@ -8,14 +8,14 @@ package edu.matkosoric.concurrency.atomic.classes;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class ChangeOnce implements Runnable{
+public class ChangeOnce implements Runnable {
 
     // ensure that multiple threads will change static variable only once
     // solution is in the compareAndSet() method from AtomicInteger
 
     public AtomicInteger code;
 
-    public void checkCode () {
+    public void checkCode() {
         int oldCode = code.get();
         int newCode = code.get() + 2;
         code.compareAndSet(oldCode, newCode);

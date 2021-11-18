@@ -26,11 +26,19 @@ public class ApolloMissionWrong implements Serializable {
         this.crew = crew;
     }
 
-    public String getName() { return name; }
-    public LocalDate getLaunchDate() { return launchDate; }
-    public ArrayList<String> getCrew() { return crew; }
+    public String getName() {
+        return name;
+    }
 
-    public String toString () {
+    public LocalDate getLaunchDate() {
+        return launchDate;
+    }
+
+    public ArrayList<String> getCrew() {
+        return crew;
+    }
+
+    public String toString() {
         return "Apollo Mission [name=" + name + ", launch date=" + launchDate + ", crew=" + crew + "]";
     }
 }

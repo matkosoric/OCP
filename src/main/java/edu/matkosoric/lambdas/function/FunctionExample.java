@@ -20,9 +20,9 @@ public class FunctionExample {
         // dataset
         List<String> sovietLeaders = new ArrayList<>();
         sovietLeaders.addAll(Arrays.asList("Lenin", "Stalin", "Malenkov", "Khrushchev", "Brezhnev",
-                                            "Andropov", "Chernenko", "Gorbachev", "Yanayev"));
+                "Andropov", "Chernenko", "Gorbachev", "Yanayev"));
 
-        Function<String, String> reversingSurnames = str -> new StringBuilder (str).reverse().toString();
+        Function<String, String> reversingSurnames = str -> new StringBuilder(str).reverse().toString();
 
         for (String element : sovietLeaders)
             System.out.println(reversingSurnames.apply(element));

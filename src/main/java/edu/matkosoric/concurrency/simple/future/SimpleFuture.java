@@ -23,17 +23,19 @@ public class SimpleFuture {
 
             executorService = Executors.newSingleThreadExecutor();
 
-            Future<?> result = executorService.submit(() -> {try {
-                                                                Thread.sleep(5000);
-                                                            } catch (InterruptedException e) {
-                                                                System.out.println("Interrupted!");
-                                                            }});
+            Future<?> result = executorService.submit(() -> {
+                try {
+                    Thread.sleep(5000);
+                } catch (InterruptedException e) {
+                    System.out.println("Interrupted!");
+                }
+            });
 
             result.get(2, TimeUnit.SECONDS);
 
             System.out.println("Regular end!");
 
-        } catch (TimeoutException e ) {
+        } catch (TimeoutException e) {
             System.out.println("Timeout!");
         } finally {
             if (executorService != null) executorService.shutdown();

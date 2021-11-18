@@ -21,8 +21,8 @@ public class Forrest {
         System.out.println(path2);
         System.out.println(path2.normalize());
 
-        System.out.print(" "+path1.equals(path2));
-        System.out.print(" "+path1.normalize().equals(path2.normalize()));
+        System.out.print(" " + path1.equals(path2));
+        System.out.print(" " + path1.normalize().equals(path2.normalize()));
 
         System.out.print(Files.isSameFile(path1, path2));  // NoSuchFileException
     }

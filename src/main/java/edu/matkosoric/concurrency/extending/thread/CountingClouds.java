@@ -10,7 +10,7 @@ public class CountingClouds extends Thread {
 
     String threadMarker;
 
-    CountingClouds (String marker) {
+    CountingClouds(String marker) {
         this.threadMarker = marker;
     }
 
@@ -40,12 +40,12 @@ public class CountingClouds extends Thread {
     }
 
     // overriding the run() method
-    public void run () {
+    public void run() {
         Double a = 0.0;
-        for (int i = 0; i < 10_000_000; i++){
-            a = a + i/7.917 - i/3.517 + i/5.792 - i/9.327;
+        for (int i = 0; i < 10_000_000; i++) {
+            a = a + i / 7.917 - i / 3.517 + i / 5.792 - i / 9.327;
         }
-        System.out.println("Counting done!  " + a + "  -  "  + threadMarker);
+        System.out.println("Counting done!  " + a + "  -  " + threadMarker);
     }
 
 }

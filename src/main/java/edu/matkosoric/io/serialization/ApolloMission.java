@@ -10,7 +10,7 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-public class ApolloMission implements Serializable{
+public class ApolloMission implements Serializable {
 
     private static final long serialVersionUID = 32423;
 
@@ -26,7 +26,15 @@ public class ApolloMission implements Serializable{
         this.crew = crew;
     }
 
-    public String getName() { return name; }
-    public LocalDate getLaunchDate() { return launchDate; }
-    public ArrayList<String> getCrew() { return crew; }
+    public String getName() {
+        return name;
+    }
+
+    public LocalDate getLaunchDate() {
+        return launchDate;
+    }
+
+    public ArrayList<String> getCrew() {
+        return crew;
+    }
 }

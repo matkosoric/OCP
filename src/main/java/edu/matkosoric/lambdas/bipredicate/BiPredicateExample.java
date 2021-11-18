@@ -8,7 +8,6 @@ package edu.matkosoric.lambdas.bipredicate;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.TreeMap;
 import java.util.function.BiPredicate;
 
 public class BiPredicateExample {

@@ -12,6 +12,7 @@ public class Body {
     // just like its methods and variables.
 
     private boolean organFlag = false;
+
     public void printInfo() {
         System.out.println("Hi! I am body. I contain organs.");
     }
@@ -33,14 +34,16 @@ public class Body {
 
     class Liver {
         boolean organFlag = true;
-        public void printInfo () {
+
+        public void printInfo() {
             System.out.println("Hi! I am liver. I am an organ in the torso.");
         }
     }
 
     class Brain {
         boolean organFlag = true;
-        public  void printInfo() {
+
+        public void printInfo() {
             System.out.println("Hi! I am brain. I am an organ in the head.");
         }
     }

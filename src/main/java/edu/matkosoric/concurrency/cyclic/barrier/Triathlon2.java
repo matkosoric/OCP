@@ -17,14 +17,20 @@ public class Triathlon2 {
     // every thread (competitor) has to complete one stage before all proceed to the next one
     // CyclicBarrier2 is deployed with a lambda that gets executed after that point in execution
 
-    private void running () { System.out.println("...running...."); }
+    private void running() {
+        System.out.println("...running....");
+    }
 
-    private void cycling () { System.out.println("...cycling..."); }
+    private void cycling() {
+        System.out.println("...cycling...");
+    }
 
-    private void swimming () { System.out.println("...swimming..."); }
+    private void swimming() {
+        System.out.println("...swimming...");
+    }
 
 
-    public void participateInACompetition (CyclicBarrier cb1, CyclicBarrier cb2) {
+    public void participateInACompetition(CyclicBarrier cb1, CyclicBarrier cb2) {
 
         try {
             running();
@@ -51,8 +57,8 @@ public class Triathlon2 {
             CyclicBarrier barrier2 = new CyclicBarrier(4, () -> System.out.println("Throw away your bicycles!"));
 
             // there are four competitors that go through each stage at different pace
-            for (int i = 0; i < 4; i ++)
-                executorService.submit( () -> devonport2018.participateInACompetition(barrier1, barrier2));
+            for (int i = 0; i < 4; i++)
+                executorService.submit(() -> devonport2018.participateInACompetition(barrier1, barrier2));
 
         } finally {
             if (executorService != null) executorService.shutdown();

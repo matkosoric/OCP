@@ -16,7 +16,7 @@ public class EU_GDP {
 
     private double gdp = 0.0D;
 
-    private void increaseGDP () {
+    private void increaseGDP() {
         synchronized (this) {
             gdp = gdp + 0.1D;
             System.out.println(new DecimalFormat("#0.0").format(gdp));
@@ -33,8 +33,8 @@ public class EU_GDP {
 
             EU_GDP eu_gdp = new EU_GDP();
 
-            for (int i = 0; i < 10; i ++) {
-                executorService.submit( () -> eu_gdp.increaseGDP());
+            for (int i = 0; i < 10; i++) {
+                executorService.submit(() -> eu_gdp.increaseGDP());
             }
 
         } finally {

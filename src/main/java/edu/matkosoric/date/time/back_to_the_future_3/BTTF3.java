@@ -14,7 +14,7 @@ public class BTTF3 {
     public static void main(String[] args) {
 
         Locale l = new Locale("en", "US");
-        LocalDate today = LocalDate.of(1885 ,9,2);
+        LocalDate today = LocalDate.of(1885, 9, 2);
         String mToday = today.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM));
         String sToday = today.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT));
         System.out.println(mToday);

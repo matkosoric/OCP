@@ -18,11 +18,11 @@ public class AtomicClasses {
 
     static int nuclearBase = 0;
 
-    private static void printNuclearBase (int threadId) {
+    private static void printNuclearBase(int threadId) {
         System.out.println("static value: " + nuclearBase++ + " has been changed by the thread " + threadId);
     }
 
-    public static void main(String[] args) throws InterruptedException{
+    public static void main(String[] args) throws InterruptedException {
 
 
         ExecutorService executorService = null;
@@ -42,7 +42,7 @@ public class AtomicClasses {
         if (executorService != null) {
             executorService.awaitTermination(3, TimeUnit.SECONDS);
 
-            if(executorService.isTerminated())
+            if (executorService.isTerminated())
                 System.out.println("Every thread is complete");
             else
                 System.out.println("Something is still running.");

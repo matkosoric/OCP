@@ -36,11 +36,12 @@ public class TerminalOperations {
         Stream<String> MGStream2 = melGibsonMovies.stream();
         System.out.println(MGStream2.min((s1, s2) -> {
             System.out.println(s1.charAt(0) + " " + s2.charAt(0));
-            return s1.charAt(0) - s2.charAt(0);}));
+            return s1.charAt(0) - s2.charAt(0);
+        }));
 
         // max() also takes Comparator and searches for a matching value
         Stream<String> MGStream3 = melGibsonMovies.stream();
-        System.out.println(MGStream3.max((s1,s2) -> {
+        System.out.println(MGStream3.max((s1, s2) -> {
             System.out.println(s1.length() + " : " + s2.length());
             return s1.length() - s2.length();
         }));
@@ -62,11 +63,11 @@ public class TerminalOperations {
 
         // reduce()
         Stream<String> MGStream6 = melGibsonMovies.stream();
-        String allMGmovies = MGStream6.reduce("", (a,b) -> a + b + " ");
+        String allMGmovies = MGStream6.reduce("", (a, b) -> a + b + " ");
         System.out.println(allMGmovies);
 
         Stream<String> MGStream7 = melGibsonMovies.stream();
-        String allMGmovies2 = MGStream7.reduce( "", String::concat);
+        String allMGmovies2 = MGStream7.reduce("", String::concat);
         System.out.println(allMGmovies2);
 
         // collect()
@@ -76,7 +77,7 @@ public class TerminalOperations {
 
         Stream<String> MGStream9 = melGibsonMovies.stream();
         StringBuilder treeSetMG2 = MGStream9.collect(StringBuilder::new,
-                                                StringBuilder::append, StringBuilder::append);
+                StringBuilder::append, StringBuilder::append);
         System.out.println(treeSetMG2);
 
         Stream<String> MGStream10 = melGibsonMovies.stream();

@@ -38,16 +38,18 @@ public class HenryMillerAndActorsOnB {
         System.out.println(years);
 
         // merge()
-        BiFunction<String, String, String> mapper = ( s1, s2) -> {if(s1.startsWith("B"))
-                                                                        return s1;          // do not change value if it starts with B
-                                                                    else if( s2.startsWith("B"))
-                                                                        return s2;          // if new value start with B, replace it
-                                                                    return null;};          // if neither values start with "B", delete entry
+        BiFunction<String, String, String> mapper = (s1, s2) -> {
+            if (s1.startsWith("B"))
+                return s1;          // do not change value if it starts with B
+            else if (s2.startsWith("B"))
+                return s2;          // if new value start with B, replace it
+            return null;
+        };          // if neither values start with "B", delete entry
         Map<Integer, String> actorsWithSurnameOnB = new HashMap<>();
-        actorsWithSurnameOnB.put(1,"Buschemi, Steve");
-        actorsWithSurnameOnB.put(2,"Butler, Gerard");
-        actorsWithSurnameOnB.put(3,"Depardieu, Gerard");
-        actorsWithSurnameOnB.put(4,"Willis, Bruce");
+        actorsWithSurnameOnB.put(1, "Buschemi, Steve");
+        actorsWithSurnameOnB.put(2, "Butler, Gerard");
+        actorsWithSurnameOnB.put(3, "Depardieu, Gerard");
+        actorsWithSurnameOnB.put(4, "Willis, Bruce");
         actorsWithSurnameOnB.put(5, "DiCaprio, Leonardo");      // merge() is not called on the item with key 5, so it remains in the final results
 
         actorsWithSurnameOnB.merge(1, "Bloom, Orlando", mapper);

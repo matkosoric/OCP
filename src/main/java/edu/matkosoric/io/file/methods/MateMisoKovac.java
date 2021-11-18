@@ -7,9 +7,6 @@ package edu.matkosoric.io.file.methods;
  */
 
 import java.io.File;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.time.ZoneOffset;
 
 public class MateMisoKovac {
 
@@ -19,8 +16,8 @@ public class MateMisoKovac {
 
 
         // windows path, does not work on Linux
-        File nemamRazlogaLyrics = new File ("src\\edu\\matkosoric\\io\\file\\methods\\Ja_nemam_vise_razloga_da_zivim.txt");
-        File MMKfolder = new File ("src\\edu\\matkosoric\\io\\file\\methods\\MMK-lyrics");
+        File nemamRazlogaLyrics = new File("src\\edu\\matkosoric\\io\\file\\methods\\Ja_nemam_vise_razloga_da_zivim.txt");
+        File MMKfolder = new File("src\\edu\\matkosoric\\io\\file\\methods\\MMK-lyrics");
 
         // checking file info
         if (nemamRazlogaLyrics.exists()) {
@@ -29,7 +26,7 @@ public class MateMisoKovac {
             System.out.println("IS THIS DIRECTORY? " + nemamRazlogaLyrics.isDirectory());
             System.out.println("IS THIS DIRECTORY? " + MMKfolder.isDirectory());
 
-            if(nemamRazlogaLyrics.isFile()) {
+            if (nemamRazlogaLyrics.isFile()) {
                 System.out.println("FILE LENGTH: " + nemamRazlogaLyrics.length());
                 System.out.println("LAST MODIFIED: " + nemamRazlogaLyrics.lastModified());
             }

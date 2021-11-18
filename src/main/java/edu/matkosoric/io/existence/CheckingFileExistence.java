@@ -12,7 +12,7 @@ public class CheckingFileExistence {
 
     public static void main(String[] args) {
 
-        File file = new File ("src\\edu\\matkosoric\\io\\existence\\gibberish.txt");
+        File file = new File("src\\edu\\matkosoric\\io\\existence\\gibberish.txt");
         System.out.println("Does file exists? - " + file.exists());
 
     }

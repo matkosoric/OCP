@@ -23,11 +23,10 @@ public class Book {
     }
 
     @Override
-    public boolean equals (Object obj) {
-        if(!(obj instanceof Book)) {
+    public boolean equals(Object obj) {
+        if (!(obj instanceof Book)) {
             return false;
-        }
-        else {
+        } else {
             Book parameterBook = (Book) obj;
             return this.ISBN == parameterBook.ISBN;
         }

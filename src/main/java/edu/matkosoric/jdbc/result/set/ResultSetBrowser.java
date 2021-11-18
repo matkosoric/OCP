@@ -14,7 +14,7 @@ public class ResultSetBrowser {
 
     // traversing the ResultSet object with cursor
 
-    public static void main(String[] args) throws ClassNotFoundException{
+    public static void main(String[] args) throws ClassNotFoundException {
 
         Connection conn = null;
         PreparedStatement preparedStatement;
@@ -53,7 +53,7 @@ public class ResultSetBrowser {
             // copy values from two database columns to a map
             Map<String, Integer> turizam2016 = new HashMap<>();
             resultSet = statement.executeQuery("SELECT mjesec, broj_nocenja FROM turizam2016 ");
-            while(resultSet.next()) {
+            while (resultSet.next()) {
                 String mjesec = resultSet.getString("mjesec");
                 Integer brojNocenja = resultSet.getInt("broj_nocenja");
                 turizam2016.put(mjesec, brojNocenja);
@@ -64,7 +64,7 @@ public class ResultSetBrowser {
             // database columns can be referred to by id number
             Map<String, Integer> turizam2016_2 = new HashMap<>();
             resultSet = statement.executeQuery("SELECT mjesec, broj_nocenja FROM turizam2016 ");
-            while(resultSet.next()) {
+            while (resultSet.next()) {
                 String mjesec = resultSet.getString(1);
                 Integer brojNocenja = resultSet.getInt(2);
                 // columns indexes start with 1, not 0
@@ -163,12 +163,12 @@ public class ResultSetBrowser {
             conn.commit();
 
         } catch (SQLException e) {
-            System.out.println ("SQL exception! " + e);
+            System.out.println("SQL exception! " + e);
         }
 
         // check whether database has been properly shut down
         try {
-            DriverManager.getConnection ("jdbc:derby:;shutdown=true");
+            DriverManager.getConnection("jdbc:derby:;shutdown=true");
         } catch (SQLException ex) {
             if (((ex.getErrorCode() == 50000) && ("XJ015".equals(ex.getSQLState())))) {
                 System.out.println("Derby shut down normally");
@@ -179,7 +179,7 @@ public class ResultSetBrowser {
         }
     }
 
-    static void printingSQLresults (ResultSet resultSet) throws SQLException{
+    static void printingSQLresults(ResultSet resultSet) throws SQLException {
         while (resultSet.next()) {
             System.out.printf("%-5d %-10s - %d \n",
                     resultSet.getInt(1),

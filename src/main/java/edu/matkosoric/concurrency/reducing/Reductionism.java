@@ -19,14 +19,14 @@ public class Reductionism {
 
         // ordinary stream
         System.out.println(Arrays.asList('s', 'o', 'u', 'n', 'd', ' ', 'o', 'f', ' ', 's', 'i', 'l', 'e', 'n', 'c', 'e')
-            .stream()
-            .reduce("", ((a,b) -> a+b), (c,d) -> c+d)
+                .stream()
+                .reduce("", ((a, b) -> a + b), (c, d) -> c + d)
         );
 
         // parallel stream
         System.out.println(Arrays.asList('s', 'o', 'u', 'n', 'd', ' ', 'o', 'f', ' ', 's', 'i', 'l', 'e', 'n', 'c', 'e')
                 .parallelStream()
-                .reduce("", ((a,b) -> a+b), (c,d) -> c+d)
+                .reduce("", ((a, b) -> a + b), (c, d) -> c + d)
         );
     }
 }

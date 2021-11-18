@@ -15,8 +15,8 @@ public class Liver {
 
     public static void main(String[] args) {
 
-        Locale english = new Locale ("en", "US");
-        Locale french = new Locale ("fr", "FR");
+        Locale english = new Locale("en", "US");
+        Locale french = new Locale("fr", "FR");
 
         // path can be specified as a file path or a full package name
         ResourceBundle englishBundle = ResourceBundle.getBundle("edu.matkosoric.localization.liver", english);
