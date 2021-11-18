@@ -19,8 +19,8 @@ public class Liver {
         Locale french = new Locale ("fr", "FR");
 
         // path can be specified as a file path or a full package name
-        ResourceBundle englishBundle = ResourceBundle.getBundle("edu\\matkosoric\\localization\\liver\\liver", english);
-        ResourceBundle frenchBundle = ResourceBundle.getBundle("edu\\matkosoric\\localization\\liver\\liver", french);
+        ResourceBundle englishBundle = ResourceBundle.getBundle("edu.matkosoric.localization.liver", english);
+        ResourceBundle frenchBundle = ResourceBundle.getBundle("edu.matkosoric.localization.liver", french);
 
         System.out.println(englishBundle.getString("beans"));
         System.out.println(frenchBundle.getString("beans") + "\n");

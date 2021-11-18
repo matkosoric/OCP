@@ -1,4 +1,4 @@
-package edu.matkosoric.localization;
+package edu.matkosoric.localization.milky_way_radius;
 
 /*
  * Code examples for Oracle Certified Professional (OCP) Exam
@@ -9,7 +9,7 @@ package edu.matkosoric.localization;
 import java.text.NumberFormat;
 import java.util.Locale;
 
-public class LocaleExamlpe2 {
+public class MilkyWayRadius {
 
     // formatting numbers with NumberFormat class depending on the Locale
 

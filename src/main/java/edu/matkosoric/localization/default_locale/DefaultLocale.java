@@ -1,4 +1,4 @@
-package edu.matkosoric.localization;
+package edu.matkosoric.localization.default_locale;
 
 /*
  * Code examples for Oracle Certified Professional (OCP) Exam
@@ -8,7 +8,7 @@ package edu.matkosoric.localization;
 
 import java.util.Locale;
 
-public class LocaleExample1 {
+public class DefaultLocale {
 
     // getting and setting system default Locale
 
