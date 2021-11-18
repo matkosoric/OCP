@@ -15,19 +15,19 @@ public class Friday1997 {
         String pattern3 = "eeee d+'th of'+ MMMM yyyy";
         String pattern4 = "eeee d'th of' MMMM yyyy";
 
-        LocalDate localDate = LocalDate.of(1997,2,7);
+        LocalDate localDate = LocalDate.of(1997, 2, 7);
 
         DateTimeFormatter dtf1 = DateTimeFormatter.ofPattern(pattern1);
-        System.out.println(dtf1.format (localDate));
+        System.out.println(dtf1.format(localDate));
 
         DateTimeFormatter dtf2 = DateTimeFormatter.ofPattern(pattern2);
-        System.out.println(dtf2.format (localDate));
+        System.out.println(dtf2.format(localDate));
 
         DateTimeFormatter dtf3 = DateTimeFormatter.ofPattern(pattern3);
-        System.out.println(dtf3.format (localDate));
+        System.out.println(dtf3.format(localDate));
 
         DateTimeFormatter dtf4 = DateTimeFormatter.ofPattern(pattern4);
-        System.out.println(dtf4.format (localDate));
+        System.out.println(dtf4.format(localDate));
 
     }
 

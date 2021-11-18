@@ -1,7 +1,6 @@
 package edu.matkosoric.execution.output.fruits;
 
 import java.util.List;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.joining;
@@ -14,7 +13,7 @@ public class FruitsOrder2 {
 
     public static void main(String[] args) {
 
-        List<String> fruits =List.of("banana","orange", "apple","lemon");
+        List<String> fruits = List.of("banana", "orange", "apple", "lemon");
         Stream<String> s1 = fruits.stream();
         Stream<String> s2 = s1.peek(i -> System.out.println(i + " 1"));
 

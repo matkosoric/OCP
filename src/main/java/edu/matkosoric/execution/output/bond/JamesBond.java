@@ -7,7 +7,7 @@ public class JamesBond {
 
     // which annotations should be used to remove compilation warnings?
 
-//    @SuppressWarnings("unchecked")
+    //    @SuppressWarnings("unchecked")
 //    @SuppressWarnings("rawtypes")
     @SuppressWarnings("all")
 //    @SuppressWarnings
@@ -20,11 +20,11 @@ public class JamesBond {
 
     }
 
-//    @SafeVarargs
+    //    @SafeVarargs
 //    @SafeVarargs
     @SuppressWarnings("all")
 //    @SuppressWarnings
-    private static void print (List<String>... args) {
+    private static void print(List<String>... args) {
 
         for (List<String> str : args) {
             System.out.println(str);

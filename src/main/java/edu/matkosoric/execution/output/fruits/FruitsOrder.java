@@ -10,12 +10,12 @@ public class FruitsOrder {
 
     public static void main(String[] args) {
 
-        String [] fruitNames = { "appple", "orange", "grape", "lemon" , "apricot", "watermelon"};
+        String[] fruitNames = {"appple", "orange", "grape", "lemon", "apricot", "watermelon"};
 
         var fruits = new ArrayList<>(Arrays.asList(fruitNames));
 
         // with minus
-        fruits.sort((var a, var b) -> - a.compareTo(b));
+        fruits.sort((var a, var b) -> -a.compareTo(b));
         fruits.forEach(System.out::println);
 
         // without minus

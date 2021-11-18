@@ -1,12 +1,14 @@
 package edu.matkosoric.execution.output.weird.type;
 
-class MyWeirdType<T>{
-    private T value ;
-    public T getValue(){
-        return value ;
+class MyWeirdType<T> {
+    private T value;
+
+    public T getValue() {
+        return value;
     }
-    public void setValue(T value){
-        this.value = value ;
+
+    public void setValue(T value) {
+        this.value = value;
     }
 }
 

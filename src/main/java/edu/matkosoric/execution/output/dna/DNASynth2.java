@@ -17,7 +17,7 @@ public class DNASynth2 {
         this.gCount = gCount;
     }
 
-    void setAllCounts(int a,int tCount,int c,int g) {
+    void setAllCounts(int a, int tCount, int c, int g) {
 //        setCCount(c) = cCount;
         tCount = tCount;
         setGCount(g);
