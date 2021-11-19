@@ -1,4 +1,4 @@
-package edu.matkosoric.streams.book_sales;
+package edu.matkosoric.streams.book.sales;
 
 public class Book {
 

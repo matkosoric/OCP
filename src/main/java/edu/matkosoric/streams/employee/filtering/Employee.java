@@ -1,4 +1,4 @@
-package edu.matkosoric.streams.employee_filtering;
+package edu.matkosoric.streams.employee.filtering;
 
 import java.time.LocalDate;
 

@@ -1,4 +1,4 @@
-package edu.matkosoric.streams.employee_neighborhood;
+package edu.matkosoric.streams.employee.neighborhood;
 
 import java.util.ArrayList;
 import java.util.List;
