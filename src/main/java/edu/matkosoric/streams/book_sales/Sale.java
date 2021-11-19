@@ -1,4 +1,4 @@
-package edu.matkosoric.streams.sales;
+package edu.matkosoric.streams.book_sales;
 
 import java.util.List;
 

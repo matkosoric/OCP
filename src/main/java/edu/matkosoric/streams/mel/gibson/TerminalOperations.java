@@ -1,4 +1,4 @@
-package edu.matkosoric.streams;
+package edu.matkosoric.streams.mel.gibson;
 
 /*
  * Code examples for Oracle Certified Professional (OCP) Exam

@@ -1,4 +1,4 @@
-package edu.matkosoric.streams.sales;
+package edu.matkosoric.streams.book_sales;
 
 import java.util.Arrays;
 import java.util.List;
@@ -9,7 +9,8 @@ import static java.util.stream.Collectors.summingDouble;
 
 public class Calculate {
 
-    // taks: get a list of sales for each customer in ascending order
+    // task: get a list of sales for each customer in ascending order
+    // TODO: not completed
 
     public static void main(String[] args) {
 
@@ -102,12 +103,12 @@ public class Calculate {
 //        System.out.println(totalByUser);
 
 
-        List<Book> kurac = Arrays.asList(new Book("Neuromancer", 23.3),
+        List<Book> books = Arrays.asList(new Book("Neuromancer", 23.3),
                 new Book("Kindred", 21.12),
                 new Book("Consider Phlebas", 25.54),
                 new Book("Jurassic Park", 24.89));
 
-        System.out.println(kurac.stream().collect(summingDouble(Book::getPrice)));
+        System.out.println(books.stream().collect(summingDouble(Book::getPrice)));
 
 
     }

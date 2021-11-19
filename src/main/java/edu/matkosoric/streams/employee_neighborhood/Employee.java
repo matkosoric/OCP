@@ -1,4 +1,4 @@
-package edu.matkosoric.streams;
+package edu.matkosoric.streams.employee_neighborhood;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -78,7 +78,7 @@ public class Employee {
 
 
         // does not compile
-        // cannot find symbol method filtering(java.util.function.Predicate<edu.matkosoric.streams.Employee>,java.util.stream.Collector<java.lang.Object,capture#1 of ?,java.util.List<java.lang.Object>>)
+        // cannot find symbol method filtering(java.util.function.Predicate<edu.matkosoric.streams.employee_neighborhood.Employee>,java.util.stream.Collector<java.lang.Object,capture#1 of ?,java.util.List<java.lang.Object>>)
 //        // group5
 //        Map<String, List<Employee>> group5 = roster.stream()
 //                .collect(Collectors.groupingBy(Employee::getNeighborhood,

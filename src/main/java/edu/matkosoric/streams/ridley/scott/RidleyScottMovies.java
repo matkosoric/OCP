@@ -1,4 +1,4 @@
-package edu.matkosoric.streams;
+package edu.matkosoric.streams.ridley.scott;
 
 /*
  * Code examples for Oracle Certified Professional (OCP) Exam
@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 
-public class IntermediateOperations {
+public class RidleyScottMovies {
 
     // demonstration of intermediate operations on streams
 
