@@ -1,8 +1,8 @@
 package edu.matkosoric.nio2.file.attributes;
 
 /*
- * Code examples for Oracle Certified Associate (OCA) Exam
- * Java 11 SE, 2017.
+ * Code examples for Oracle Certified Professional (OCP) Exam
+ * Java 11 SE, 2021.
  * Created by © Matko Soric.
  */
 
