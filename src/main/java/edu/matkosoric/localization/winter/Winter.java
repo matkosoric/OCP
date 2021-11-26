@@ -1,5 +1,11 @@
 package edu.matkosoric.localization.winter;
 
+/*
+ * Code examples for Oracle Certified Professional (OCP) Exam
+ * Java 11 SE, 2021.
+ * Created by © Matko Soric.
+ */
+
 import java.util.Locale;
 import java.util.ResourceBundle;
 

@@ -1,5 +1,11 @@
 package edu.matkosoric.nio.forrest;
 
+/*
+ * Code examples for Oracle Certified Professional (OCP) Exam
+ * Java 11 SE, 2021.
+ * Created by © Matko Soric.
+ */
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;

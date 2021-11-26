@@ -7,7 +7,6 @@ package edu.matkosoric.generics.upper.bound;
  */
 
 import edu.matkosoric.class_.design.implementing.Human;
-
 import java.util.ArrayList;
 import java.util.List;
 

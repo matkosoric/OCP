@@ -1,14 +1,14 @@
 package edu.matkosoric.io.serialization.wrong;
 
-import java.io.Serializable;
-import java.time.LocalDate;
-import java.util.ArrayList;
-
 /*
  * Code examples for Oracle Certified Professional (OCP) Exam
  * Java 11 SE, 2021.
  * Created by © Matko Soric.
  */
+
+import java.io.Serializable;
+import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class ApolloMissionWrong implements Serializable {
 

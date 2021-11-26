@@ -1,5 +1,11 @@
 package edu.matkosoric.streams.book.sales;
 
+/*
+ * Code examples for Oracle Certified Professional (OCP) Exam
+ * Java 11 SE, 2021.
+ * Created by © Matko Soric.
+ */
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;

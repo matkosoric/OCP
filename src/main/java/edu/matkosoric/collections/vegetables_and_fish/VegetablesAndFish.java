@@ -1,5 +1,11 @@
 package edu.matkosoric.collections.vegetables_and_fish;
 
+/*
+ * Code examples for Oracle Certified Professional (OCP) Exam
+ * Java 11 SE, 2021.
+ * Created by © Matko Soric.
+ */
+
 import java.util.ArrayList;
 import java.util.List;
 

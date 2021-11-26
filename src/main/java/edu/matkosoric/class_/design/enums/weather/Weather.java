@@ -1,5 +1,11 @@
 package edu.matkosoric.class_.design.enums.weather;
 
+/*
+ * Code examples for Oracle Certified Professional (OCP) Exam
+ * Java 11 SE, 2021.
+ * Created by © Matko Soric.
+ */
+
 import java.io.Serializable;
 
 public class Weather {

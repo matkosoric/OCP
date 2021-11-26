@@ -1,5 +1,11 @@
 package edu.matkosoric.streams.employee.filtering;
 
+/*
+ * Code examples for Oracle Certified Professional (OCP) Exam
+ * Java 11 SE, 2021.
+ * Created by © Matko Soric.
+ */
+
 import java.time.LocalDate;
 import java.time.chrono.IsoChronology;
 import java.util.ArrayList;

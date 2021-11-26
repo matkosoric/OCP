@@ -1,5 +1,11 @@
 package edu.matkosoric.streams.hospital;
 
+/*
+ * Code examples for Oracle Certified Professional (OCP) Exam
+ * Java 11 SE, 2021.
+ * Created by © Matko Soric.
+ */
+
 import java.util.function.IntFunction;
 import java.util.function.IntUnaryOperator;
 import java.util.stream.IntStream;
