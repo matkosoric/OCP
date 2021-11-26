@@ -1,5 +1,11 @@
 package edu.matkosoric._unclassified_yet;
 
+/*
+ * Code examples for Oracle Certified Professional (OCP) Exam
+ * Java 11 SE, 2021.
+ * Created by © Matko Soric.
+ */
+
 //import org.checkerframework.checker.interning.qual.Interned;
 //import org.checkerframework.checker.nullness.qual.NonNull;
 

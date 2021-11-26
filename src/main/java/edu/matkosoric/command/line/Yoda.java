@@ -1,5 +1,11 @@
 package edu.matkosoric.command.line;
 
+/*
+ * Code examples for Oracle Certified Professional (OCP) Exam
+ * Java 11 SE, 2021.
+ * Created by © Matko Soric.
+ */
+
 public class Yoda {
 
     public static void main(String[] args) {

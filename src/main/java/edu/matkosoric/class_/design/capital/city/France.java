@@ -1,5 +1,11 @@
 package edu.matkosoric.class_.design.capital.city;
 
+/*
+ * Code examples for Oracle Certified Professional (OCP) Exam
+ * Java 11 SE, 2021.
+ * Created by © Matko Soric.
+ */
+
 public class France extends EuropeanUnion {
 
     // does not compile - methods look the same after type erasure, but are not in override relationship

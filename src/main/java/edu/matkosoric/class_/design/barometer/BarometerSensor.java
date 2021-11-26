@@ -1,5 +1,11 @@
 package edu.matkosoric.class_.design.barometer;
 
+/*
+ * Code examples for Oracle Certified Professional (OCP) Exam
+ * Java 11 SE, 2021.
+ * Created by © Matko Soric.
+ */
+
 public class BarometerSensor extends Barometer {
 
     public float getVal() {

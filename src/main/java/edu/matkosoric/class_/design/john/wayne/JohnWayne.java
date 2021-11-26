@@ -1,5 +1,11 @@
 package edu.matkosoric.class_.design.john.wayne;
 
+/*
+ * Code examples for Oracle Certified Professional (OCP) Exam
+ * Java 11 SE, 2021.
+ * Created by © Matko Soric.
+ */
+
 public class JohnWayne extends Man implements Cowboy {
 
     // out of five statements, see which compile
