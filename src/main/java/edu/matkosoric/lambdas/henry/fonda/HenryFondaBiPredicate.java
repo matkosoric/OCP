@@ -1,4 +1,4 @@
-package edu.matkosoric.lambdas.bipredicate;
+package edu.matkosoric.lambdas.henry.fonda;
 
 /*
  * Code examples for Oracle Certified Professional (OCP) Exam
@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.function.BiPredicate;
 
-public class BiPredicateExample {
+public class HenryFondaBiPredicate {
 
     // demonstration of BiPredicate functional interface
 
