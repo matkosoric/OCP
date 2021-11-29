@@ -1,4 +1,4 @@
-package edu.matkosoric.class_.design.tee;
+package edu.matkosoric.class_.design.tea;
 
 class Water {
 

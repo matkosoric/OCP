@@ -1,4 +1,4 @@
-package edu.matkosoric.class_.design.tee;
+package edu.matkosoric.class_.design.tea;
 
 /*
  * Code examples for Oracle Certified Professional (OCP) Exam
@@ -8,7 +8,7 @@ package edu.matkosoric.class_.design.tee;
 
 import java.util.Collection;
 
-class Tee extends Water {
+class Tea extends Water {
 
     public void print(Object obj) {
         System.out.println("[" + obj + "]");
