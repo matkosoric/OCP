@@ -19,7 +19,7 @@ public class JacksonFive {
         print2(nums);
 //        print3(nums);   // runtime error: java.lang.ArrayIndexOutOfBoundsException
         print4(nums);
-        print5(nums);
+//        print5(nums);   // var not allowed in compound declaration
     }
 
     private static void print1(int[] nums) {
@@ -50,10 +50,11 @@ public class JacksonFive {
         }
     }
 
-    private static void print5(int[] nums) {
-        for (int j = 0, i = j; i <= nums.length - 1; ++i) {
-            System.out.println(nums[i]);
-        }
-    }
+    // does not compile
+//    private static void print5(int[] nums) {
+//        for (var j = 0, i = j; i <= nums.length - 1; ++i) {
+//            System.out.println(nums[i]);
+//        }
+//    }
 
 }
