@@ -15,10 +15,10 @@ public class CalculateAverage {
 
     public static void main(String[] args) {
 
-        var numbers = List.of(0,1,2,3,4,5,6,7,8,9);
+        var numbers = List.of(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
 
 //        double avg1 = numbers.stream().parallel().averagingDouble(a -> a);                  // does not compile
-        double avg2 = numbers.parallelStream().mapToInt (m -> m).average().getAsDouble ();
+        double avg2 = numbers.parallelStream().mapToInt(m -> m).average().getAsDouble();
 //        double avg3 = numbers.stream().mapToInt (i -> i).average().parallel();              // does not compile
 //        double avg4 = numbers.stream().average().getAsDouble();                             // does not compile
         double avg5 = numbers.stream().collect(Collectors.averagingDouble(n -> n));
