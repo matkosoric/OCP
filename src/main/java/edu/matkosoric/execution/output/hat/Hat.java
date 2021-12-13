@@ -8,7 +8,8 @@ package edu.matkosoric.execution.output.hat;
 
 public class Hat {
 
-    // what is the outout?
+    // what is the output?
+    // hat at store 1
 
     public static void main(String[] args) {
 

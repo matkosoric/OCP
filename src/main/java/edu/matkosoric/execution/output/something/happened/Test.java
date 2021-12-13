@@ -6,6 +6,8 @@ package edu.matkosoric.execution.output.something.happened;
  * Created by © Matko Soric.
  */
 
+// #TAG1
+
 public class Test {
 
     // in order to print "Something happened", what should
