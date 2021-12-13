@@ -6,7 +6,7 @@ package edu.matkosoric.execution.output.global.namescope;
  * Created by © Matko Soric.
  */
 
-// #IMPORTANT
+// #TAG1
 
 public class GlobalNamescope {
 

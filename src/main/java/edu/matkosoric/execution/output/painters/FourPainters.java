@@ -11,6 +11,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+// #TAG1
+
 public class FourPainters {
 
     // what is the output?

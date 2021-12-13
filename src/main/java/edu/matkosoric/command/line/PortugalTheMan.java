@@ -15,8 +15,8 @@ public class PortugalTheMan {
         // if run with arguments: "Portugal. The Man" Evil Friends
         // result will be: Portugal. The ManEvilFriends
 
-        // if run with arguments: Hello "Hello World" Hello World
-        // result will be: HelloHello WorldHello
+        // if run with arguments: Hello WorldHelloWorld
+        // result will be: Hello WorldHelloWorld
 
 
     }
