@@ -9,6 +9,8 @@ package edu.matkosoric.lambdas.my.runnable;
 // the only interface provided in here
 // that contains exactly single abstract (unimplemented) method
 
+// #TAG2
+
 @FunctionalInterface
 interface MyRunnable3 {
     public default void run() {
