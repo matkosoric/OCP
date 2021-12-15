@@ -1,4 +1,4 @@
-package edu.matkosoric.jdbc.derby.setup;
+package edu.matkosoric.jdbc.croatian.cities;
 
 /*
  * Code examples for Oracle Certified Professional (OCP) Exam 1Z0-819
@@ -8,7 +8,7 @@ package edu.matkosoric.jdbc.derby.setup;
 
 import java.sql.*;
 
-public class DerbySetup {
+public class CroatianCities {
 
     // test connection to the Derby database
     // delete previously created table, insert new records,
@@ -17,7 +17,7 @@ public class DerbySetup {
 
     public static void main(String[] args) throws Exception {
 
-        String url = "jdbc:derby:derbyMatko;create=true";
+        String url = "jdbc:derby:CroatianCities;create=true";
 
         try (Connection conn = DriverManager.getConnection(url);
              Statement stmt = conn.createStatement()) {

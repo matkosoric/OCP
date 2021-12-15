@@ -1,4 +1,4 @@
-package edu.matkosoric.jdbc.derby.setup;
+package edu.matkosoric.jdbc.sf.characters;
 
 /*
  * Code examples for Oracle Certified Professional (OCP) Exam 1Z0-819
@@ -9,7 +9,7 @@ package edu.matkosoric.jdbc.derby.setup;
 import java.sql.*;
 
 
-public class DerbySetup2 {
+public class SFCharacters {
 
     // setting up a Derby database with embedded driver
 
@@ -28,7 +28,7 @@ public class DerbySetup2 {
 
         try {
             DriverManager.registerDriver(new org.apache.derby.jdbc.EmbeddedDriver());
-            conn = DriverManager.getConnection("jdbc:derby:derbyMatko2;create=true");
+            conn = DriverManager.getConnection("jdbc:derby:SFcharacters;create=true");
             conn.setAutoCommit(false);
             stmt = conn.createStatement();
             stmt.execute(createSQL);

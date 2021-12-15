@@ -10,7 +10,7 @@ import java.sql.*;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ResultSetBrowser {
+public class TourismByMonths {
 
     // traversing the ResultSet object with cursor
 
@@ -27,7 +27,7 @@ public class ResultSetBrowser {
 
         try {
             DriverManager.registerDriver(new org.apache.derby.jdbc.EmbeddedDriver());
-            conn = DriverManager.getConnection("jdbc:derby:derbyMatko4;create=true");
+            conn = DriverManager.getConnection("jdbc:derby:TourismByMonths;create=true");
             conn.setAutoCommit(false);
             statement = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
             statement.execute(createSQL);
