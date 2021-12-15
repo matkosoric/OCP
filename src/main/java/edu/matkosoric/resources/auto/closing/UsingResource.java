@@ -16,7 +16,6 @@ public class UsingResource {
             r.printResource();
         } finally {
             System.out.println("D");
-
         }
     }
 }
