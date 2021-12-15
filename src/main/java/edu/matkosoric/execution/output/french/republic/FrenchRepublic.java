@@ -30,7 +30,7 @@ public class FrenchRepublic {
             dummyMethod(iter.hasNext());
         }
 
-//        for (Iterator iter2 = List.of(1870, 1946, 1958).iterator(); iter.hasNext();) {
+//        for (Iterator iter2 = List.of(1870, 1946, 1958).iterator(); iter.hasNext();) { // point of failure - iter.hasNext()
 //            dummyMethod2(iter2.hasNext());
 //        }
 
