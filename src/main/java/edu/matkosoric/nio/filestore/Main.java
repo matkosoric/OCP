@@ -16,7 +16,7 @@ import java.nio.file.Paths;
 public class Main {
 
     // what is the output if file foes not exist?
-    // \u01\work\filestore.txtis not deleted.
+    // \ u01\work\filestore.txtis not deleted.
 
     public static void main(String[] args) {
 
