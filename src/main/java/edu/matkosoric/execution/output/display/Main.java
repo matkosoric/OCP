@@ -11,6 +11,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
+
         var lst = List.of(1, 2.0f, "4.0");
         for (var c : lst) {
             System.out.println("> " + c);
