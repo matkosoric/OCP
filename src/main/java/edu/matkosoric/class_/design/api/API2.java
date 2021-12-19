@@ -1,4 +1,4 @@
-package edu.matkosoric.resources.api;
+package edu.matkosoric.class_.design.api;
 
 /*
  * Code examples for Oracle Certified Professional (OCP) Exam 1Z0-819
