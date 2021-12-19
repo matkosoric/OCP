@@ -9,6 +9,8 @@ package edu.matkosoric.lambdas.unary.operator;
 import java.util.Arrays;
 import java.util.function.UnaryOperator;
 
+// #TAG2
+
 public class TrippleSize {
 
     // find new method that will tipple values
