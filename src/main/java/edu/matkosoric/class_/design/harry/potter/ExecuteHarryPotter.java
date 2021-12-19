@@ -6,6 +6,8 @@ package edu.matkosoric.class_.design.harry.potter;
  * Created by © Matko Soric.
  */
 
+// #TAG2
+
 public class ExecuteHarryPotter {
 
     // what is the output?
