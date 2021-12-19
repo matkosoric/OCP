@@ -1,4 +1,4 @@
-package edu.matkosoric.map.tree.map;
+package edu.matkosoric.collections.map.tree.map;
 
 /*
  * Code examples for Oracle Certified Professional (OCP) Exam 1Z0-819

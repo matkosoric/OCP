@@ -1,4 +1,4 @@
-package edu.matkosoric.map.hash.map;
+package edu.matkosoric.collections.map.hash.map;
 
 /*
  * Code examples for Oracle Certified Professional (OCP) Exam 1Z0-819
