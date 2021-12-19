@@ -26,7 +26,7 @@ public class Employees {
 
         try {
             DriverManager.registerDriver(new org.apache.derby.jdbc.EmbeddedDriver());
-            conn = DriverManager.getConnection("jdbc:derby:employees;create=true");
+            conn = DriverManager.getConnection("jdbc:derby:derby/employees;create=true");
             conn.setAutoCommit(false);
             stmt = conn.createStatement();
             stmt.execute(createSQL);

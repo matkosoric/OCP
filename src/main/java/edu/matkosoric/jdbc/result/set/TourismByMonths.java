@@ -27,7 +27,7 @@ public class TourismByMonths {
 
         try {
             DriverManager.registerDriver(new org.apache.derby.jdbc.EmbeddedDriver());
-            conn = DriverManager.getConnection("jdbc:derby:TourismByMonths;create=true");
+            conn = DriverManager.getConnection("jdbc:derby:derby/TourismByMonths;create=true");
             conn.setAutoCommit(false);
             statement = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
             statement.execute(createSQL);

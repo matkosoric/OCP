@@ -33,7 +33,7 @@ public class GradoviIZupanije {
 
             DriverManager.registerDriver(new org.apache.derby.jdbc.EmbeddedDriver());
 
-            conn = DriverManager.getConnection("jdbc:derby:derbyMatko3;create=true");
+            conn = DriverManager.getConnection("jdbc:derby:derby/GradoviIZupanije;create=true");
             conn.setAutoCommit(false);
             statement = conn.createStatement();
             statement.execute(createSQL);
