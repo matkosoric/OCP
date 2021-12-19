@@ -6,6 +6,8 @@ package edu.matkosoric.class_.design.conquistador;
  * Created by © Matko Soric.
  */
 
+// #TAG1
+
 public class ConSub extends ConSuper {
 
     // what is the output?
