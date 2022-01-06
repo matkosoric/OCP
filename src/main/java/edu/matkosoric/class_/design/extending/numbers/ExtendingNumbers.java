@@ -1,4 +1,4 @@
-package edu.matkosoric.execution.output.extending.numbers;
+package edu.matkosoric.class_.design.extending.numbers;
 
 /*
  * Code examples for Oracle Certified Professional (OCP) Exam 1Z0-819
