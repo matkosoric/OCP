@@ -2,7 +2,7 @@ package edu.matkosoric.nio2.continent;
 
 /*
  * Code examples for Oracle Certified Professional (OCP) Exam
- * Java 11 SE, 2021.
+ * Java 11 SE, 2022.
  * Created by © Matko Soric.
  */
 

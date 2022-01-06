@@ -2,7 +2,7 @@ package edu.matkosoric.class_.design.member.inner.class_2;
 
 /*
  * Code examples for Oracle Certified Professional (OCP) Exam 1Z0-819
- * Java 11 SE, 2021.
+ * Java 11 SE, 2022.
  * Created by © Matko Soric.
  */
 
