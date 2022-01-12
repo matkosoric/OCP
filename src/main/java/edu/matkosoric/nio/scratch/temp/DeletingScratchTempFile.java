@@ -25,7 +25,7 @@ public class DeletingScratchTempFile {
         Path outputFile = Paths.get("src/main/java/edu/matkosoric/nio/scratch/temp/scratch/exam/new.txt");
         Path directory = Paths.get("src/main/java/edu/matkosoric/nio/scratch/temp/scratch");
         Files.copy(currentFile, outputFile);
-        Files.copy(outputFile, directory);
+        Files.copy(outputFile, directory);      // FileAlreadyExistsException
         Files.delete(outputFile);
 
     }

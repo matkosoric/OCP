@@ -26,7 +26,7 @@ public class HansZimmerFolder {
 
 //            BasicFileAttributes attributes1 = Files.isDirectory (path);                                 // does not compile - type mismatch
 //            BasicFileAttributes attributes2 =Files.getAttribute (path, "insdirectory");                 // does not compile - type mismatch
-//            BasicFileAttributes attributes3 = Files, readAttributes (path, FileAttributes, class);      // does not compile - wrong syntax
+//            BasicFileAttributes attributes3 = Files.readAttributes (path, FileAttributes.class);          // does not compile - wrong syntax
             BasicFileAttributes attributes4 = Files.readAttributes(path, BasicFileAttributes.class); // line 1
 
             System.out.println(attributes4.isDirectory());

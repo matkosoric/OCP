@@ -6,6 +6,8 @@ package edu.matkosoric.lambdas.adaptor.first;
  * Created by © Matko Soric.
  */
 
+// #TAG2
+
 public abstract class MainClass2 implements AdaptorFirst {
 
     public void showFirst() {

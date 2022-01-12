@@ -13,7 +13,7 @@ import java.util.function.UnaryOperator;
 
 public class TrippleSize {
 
-    // find new method that will tipple values
+    // find new method that will tripple values
     // in the same way trippled1 UnaryOperator ?
     // (var x ) -> (x * 3);
     // x -> { return x * 3; };
