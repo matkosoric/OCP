@@ -8,7 +8,7 @@ package edu.matkosoric.execution.output.dna;
 
 public class DNASynth2 {
 
-    // which settters will have effect
+    // which setters will have effect
 
     int tCount;
     int cCount;
