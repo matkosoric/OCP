@@ -6,10 +6,12 @@ package edu.matkosoric.class_.design.point.json;
  * Created by © Matko Soric.
  */
 
+// #TAG1
+
 public class Point {
 
-    // how should custom JsonField annotation look like
-    // for Point class to compile?
+    // how should custom JsonField annotation look like for Point class to compile?
+    // @Target(ElementType.FIELD)
 
     @JsonField(type = JsonField.Type.STRING, name = "name")
     private String _name;

@@ -7,13 +7,12 @@ import java.lang.annotation.Target;
 
 // #TAG1
 
-@Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
-public @interface JsonField {
+@interface JsonField {
     String name() default "";
 
     enum Type {
-        INT, STRING
+        INT, STRING, BOOLEAN
     }
 
     Type type();
