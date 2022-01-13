@@ -1,4 +1,4 @@
-package edu.matkosoric.concurrency.parallelization;
+package edu.matkosoric.concurrency.money.parallelization;
 
 /*
  * Code examples for Oracle Certified Professional (OCP) Exam 1Z0-819
