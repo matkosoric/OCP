@@ -63,7 +63,6 @@ public class DNASynth {
         dnaSynth.setCCount();
         System.out.println(dnaSynth);
 
-
         dnaSynth.setGCount(200);
         System.out.println(dnaSynth);
 
