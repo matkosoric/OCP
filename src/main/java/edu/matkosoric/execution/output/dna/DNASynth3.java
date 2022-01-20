@@ -11,7 +11,7 @@ public class DNASynth3 {
     // insert code at line 1 to correctly modify instance variables
     // aCount = a;
     // cCount = setCCount(c);
-    // setgCount(g);   
+    // setgCount(g);
 
     int aCount;
     int tCount;
