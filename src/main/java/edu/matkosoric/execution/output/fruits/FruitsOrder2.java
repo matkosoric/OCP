@@ -6,6 +6,8 @@ package edu.matkosoric.execution.output.fruits;
  * Created by © Matko Soric.
  */
 
+// #tag0122
+
 import java.util.List;
 import java.util.stream.Stream;
 

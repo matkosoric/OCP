@@ -6,6 +6,8 @@ package edu.matkosoric.class_.design.hashtag.methods;
  * Created by © Matko Soric.
  */
 
+// #tag0122
+
 public class Test {
 
     // what is the result?

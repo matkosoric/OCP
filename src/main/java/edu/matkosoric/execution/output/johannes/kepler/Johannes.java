@@ -6,6 +6,8 @@ package edu.matkosoric.execution.output.johannes.kepler;
  * Created by © Matko Soric.
  */
 
+// #tag0122
+
 public class Johannes {
 
     // what is the result of the code?
